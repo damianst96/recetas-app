@@ -1,0 +1,32 @@
+.d-flex {
+    display: flex;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #BF9C42;
+}
+
+.container {
+    margin: 5% 0;
+}
+
+.search {
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.recipe-card {
+    margin: 3% auto;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+}
+
+.footer {
+    text-align: center;
+    background-color: #BF9C42;
+    padding: 2% 0;
+}

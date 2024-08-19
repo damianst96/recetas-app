@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+//import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Home from './Home';
+// import AltoGuiso from './components/recipes/AltoGuiso';
+// import GuisoMoñito from './components/recipes/GuisoMoñito';
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   },
+//   {
+//     path: "/alto-guiso",
+//     element: <AltoGuiso />
+//   },
+//   {
+//     path: "/chaufest",
+//     element: <Chaufest />
+//   },
+// ]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <RouterProvider router={router} /> */}
+    <Home />
   </React.StrictMode>
 );
 
