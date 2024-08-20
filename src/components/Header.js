@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import '../styles.css';
 
-function NavScrollExample() {
+function Header() {
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid className="container">
@@ -34,4 +34,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default Header;
