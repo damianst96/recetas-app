@@ -2,32 +2,32 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-//import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from './Home';
-// import AltoGuiso from './components/recipes/AltoGuiso';
-// import GuisoMoñito from './components/recipes/GuisoMoñito';
+import AltoGuiso from './components/recipes/AltoGuiso';
+import GuisoMoñito from './components/recipes/GuisoMoñito';
+// import RecipeDetail from './components/RecipeDetail';
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home />,
-//   },
-//   {
-//     path: "/alto-guiso",
-//     element: <AltoGuiso />
-//   },
-//   {
-//     path: "/chaufest",
-//     element: <Chaufest />
-//   },
-// ]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/alto-guiso",
+    element: <AltoGuiso />
+  },
+  {
+    path: "/guiso-moñito",
+    element: <GuisoMoñito />
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <Home />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
