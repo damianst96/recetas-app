@@ -22,11 +22,14 @@
 
 .banner {
     width: 100%;
-    height: 20%;
 }
 
 .recipe {
-    margin: 0 4%;
+    margin: 4% 4%;
+}
+
+.recipe .ingredients {
+	margin: 5% 0;
 }
 
 .footer {
