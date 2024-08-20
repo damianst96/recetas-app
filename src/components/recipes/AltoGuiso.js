@@ -25,9 +25,10 @@ function AltoGuiso(){
                 </div>
                 <div className="description">
                     <p>Voy a empezar contando una historia que cambió mi vida: el 7 de agosto del 2011 fue la fecha 1 del 
-                    torneo Apertura 2011
-
-                    </p>
+                    Torneo Apertura del fútbol argentino y Lanús le ganó 1-0 a San Lorenzo en el Nuevo Gasómetro. Lo más
+					importante no fue la victoria sino que fue un hincha que dijo una frase que quedó para el recuerdo:</p>
+					
+					<i>15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso</i>
                 </div>
             </main>
 
