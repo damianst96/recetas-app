@@ -30,6 +30,10 @@ function AltoGuiso(){
 					importante no fue la victoria sino una frase de un hincha del "granate" que quedó para el recuerdo:</p>
 					
 					<p><i><b>15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso</b></i></p>
+
+                    <div className="banner">
+                        <p><img src="img/alto-guiso.jpg" width="100%" height="20%" alt="loading..." /></p>
+                    </div>
 					
 					<p>Para la mayoría de la gente es insólito que una frase tan simple como esa signifique tanto. Resulta que
 					en la época 15 pesos argentinos para un paty de cancha era mucho dinero y para un alto guiso no estabas muy
