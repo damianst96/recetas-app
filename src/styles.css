@@ -20,7 +20,7 @@
     margin: 3% auto;
 }
 
-.banner {
+.banner-main {
     width: 100%;
 }
 
@@ -36,4 +36,51 @@
     text-align: center;
     background-color: #BF9C42;
     padding: 2% 0;
+}
+
+@media (min-width: 540px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        margin: 0;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 1%;
+    }
+
+    .recipe-card {
+        margin: 3% 3%;
+    }
+
+    .cards {
+        display: flex;
+        margin: 0 5%;
+        justify-content: center;
+    }
+
+    .banner-main {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px){
+    .d-flex {
+        margin-right: 15%;
+        width: 50%;
+    }
+
+    .container {
+        margin-left: 15%;
+    }
+
+    .recipe {
+        margin: 0 15%;
+    }
 }

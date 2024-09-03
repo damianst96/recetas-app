@@ -22,14 +22,14 @@ function Header() {
         </Navbar.Collapse>
       </Container>
       <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Buscar recetas"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success" className="search">Buscar</Button>
-          </Form>
+          <Form.Control
+            type="search"
+            placeholder="Buscar recetas"
+            className="me-2"
+            aria-label="Search"
+          />
+        <Button variant="outline-success" className="search">Buscar</Button>
+      </Form>
     </Navbar>
   );
 }

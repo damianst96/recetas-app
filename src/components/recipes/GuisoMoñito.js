@@ -5,12 +5,15 @@ function GuisoMoñito(){
     return(
         <>
             <Header />
-            <div className="banner">
-                <img src="img/guiso de fideos moñito.jpg" width="100%" height="20%" alt="loading..." />
-            </div>
 
             <main className="recipe">
-                <h3 className="title">Guiso de Fideos Moñito</h3>
+            <h1 className="title">Guiso de Fideos Moñito</h1>
+
+            <div className="banner-main">
+                <img src="img/guiso de fideos moñito.jpg" alt="loading..." />
+            </div>
+
+            
                 <div className="ingredients">
                     <h5>Ingredientes:</h5>
                     <ul>

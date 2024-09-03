@@ -6,12 +6,15 @@ function AltoGuiso(){
     return(
         <>
             <Header />
-            <div className="banner">
-                <img src="img/alto guiso.jpg" width="100%" height="20%" alt="loading..." />
-            </div>
 
             <main className="recipe">
-                <h1 className="title">Alto Guiso</h1>
+            <h1 className="title">Alto Guiso</h1>
+
+            <div className="banner-main">
+                <img src="img/alto guiso.jpg" alt="loading..." />
+            </div>
+
+            
                 <div className="ingredients">
                     <h5>Ingredientes:</h5>
                     <ul>
