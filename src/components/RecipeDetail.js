@@ -6,7 +6,7 @@ function RecipeDetail(props){
         <>
             <Header />
             <div className="banner">
-                <img src={props.banner} width="100%" height="20%" alt="loading..." />
+                <img src={props.banner} alt="loading..." />
             </div>
 
             <div>

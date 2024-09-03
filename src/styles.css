@@ -20,10 +20,6 @@
     margin: 3% auto;
 }
 
-.banner-main {
-    width: 100%;
-}
-
 .recipe {
     margin: 4% 4%;
 }
@@ -41,6 +37,10 @@
 @media (min-width: 540px) {
     .cards {
         flex-wrap: wrap;
+    }
+	
+	.recipe {
+        margin: 0 10%;
     }
 }
 
@@ -63,11 +63,6 @@
         margin: 0 5%;
         justify-content: center;
     }
-
-    .banner-main {
-        max-width: 100%;
-        text-align: center;
-    }
 }
 
 @media (min-width: 992px){
@@ -79,8 +74,16 @@
     .container {
         margin-left: 15%;
     }
-
-    .recipe {
+	
+	.recipe {
         margin: 0 15%;
     }
+	
+	.banner-image {
+		width: 90%;
+	}
+	
+	.banner-main {
+		text-align: center;
+	}
 }

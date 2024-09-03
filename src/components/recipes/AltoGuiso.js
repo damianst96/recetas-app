@@ -11,7 +11,7 @@ function AltoGuiso(){
             <h1 className="title">Alto Guiso</h1>
 
             <div className="banner-main">
-                <img src="img/alto guiso.jpg" alt="loading..." />
+                <img src="img/alto guiso.jpg" className="banner-image" width="100%" alt="loading..." />
             </div>
 
             

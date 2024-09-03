@@ -10,7 +10,7 @@ function GuisoMoñito(){
             <h1 className="title">Guiso de Fideos Moñito</h1>
 
             <div className="banner-main">
-                <img src="img/guiso de fideos moñito.jpg" alt="loading..." />
+                <img src="img/guiso de fideos moñito.jpg" className="banner-image" width="100%" alt="loading..." />
             </div>
 
             
