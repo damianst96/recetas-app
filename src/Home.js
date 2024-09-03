@@ -7,20 +7,36 @@ function Home() {
   return (
     <>
       <Header />
+    
+    <div className='cards'>
+        <Card 
+          title="Guiso de Fideos Moñito" 
+          description="Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos"
+          picture="img/guiso de fideos moñito.jpg"
+          route="/guiso-moñito"
+        />
 
-      <Card 
-        title="Guiso de Fideos Moñito" 
-        description="Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos"
-        picture="img/guiso de fideos moñito.jpg"
-        route="/guiso-moñito"
-      />
+        <Card 
+          title="Alto Guiso" 
+          description="15 peso' sale un paty acá, con 15 peso' me hago Alto Guiso"
+          picture="img/alto guiso.jpg"
+          route="/alto-guiso"
+        />
 
-      <Card 
-        title="Alto Guiso" 
-        description="15 peso' sale un paty acá, con 15 peso' me hago Alto Guiso"
-        picture="img/alto guiso.jpg"
-        route="/alto-guiso"
-      />
+        <Card 
+          title="Cheesecake" 
+          description="Cheesecake"
+          picture="img/alto guiso.jpg"
+          route="/alto-guiso"
+        />
+
+        <Card 
+          title="Budín de Pan" 
+          description="Budín de Pan"
+          picture="img/alto guiso.jpg"
+          route="/alto-guiso"
+        />
+    </div>
 
       <Footer />
 
