@@ -19,6 +19,8 @@ app.use(express.static(publicPath));
 //     res.json({ message: 'Hello from Express!' });
 // });
 
+
+// GUISO DE FIDEOS MOÑITO
 app.get('/api/guiso-monito', (req, res) => {
     res.json({ 
         id: 1,
@@ -37,10 +39,15 @@ app.get('/api/guiso-monito', (req, res) => {
             "Esto es algo económico y muy sencillo ideal para el invierno. Primero vamos a picar la carne y la vamos a saltear vuelta y vuelta con aceite en una cacerola grande. Al mismo tiempo picamos la cebolla, zanahoria y ajo. Cuando la carne esté sellada la reservamos y salteamos las verduras con sal hasta que estén blandas.",
             "Volvemos a colocar la carne y luego incorporamos el puré de tomate y un poco de agua o caldo hasta cubrir.	Dejamos cocinar por 40 minutos aproximadamente y al final agregamos los fideos moñito, mezclamos todo hasta que	los fideos estén un poco menos cocidos que al dente y apagamos el fuego. Servir bien caliente.",
             "Esta es una de las recetas más personalizables que existen. Se pueden agregar o reemplazar ingredientes como gusten: se puede agregar vino, legumbres, chorizo colorado, pollo...el cielo es el límite."
-        ]
+        ],
+		type: "Salado",
+		style: "Guisos",
+		difficulty: "Fácil",
+		country: "Argentina"
     });
 });
 
+// ALTO GUISO
 app.get('/api/alto-guiso', (req, res) => {
     res.json({ 
         id: 2,
@@ -62,9 +69,43 @@ app.get('/api/alto-guiso', (req, res) => {
             "Ahora vamos a la receta. Realmente no hay mucho para explicar, el primer paso es cortar la carne en cubitos y sellarla en una cacerola grande, mientras tanto cortar las verduras. Cuando la carne esté sellada reservar.",
             "Sin lavar la olla agregar las verduras y saltearlas con sal, luego volver a agregar la carne junto con el puré de tomate y un poco de agua o caldo hasta cubrir. Dejar cocinar por aproximadamente 40 minutos hasta que el líquido se reduzca. Servir muy caliente apenas apagado el fuego.",
             "Esta es una de las recetas más personalizables que existen. Se pueden agregar o reemplazar ingredientes como gusten: se puede agregar vino, legumbres, chorizo colorado, pollo...el cielo es el límite."
-        ]
+        ],
+		type: "Salado",
+		style: "Guisos",
+		difficulty: "Fácil",
+		country: "Argentina"
     });
 });
+
+// CHEESECAKE
+app.get('/api/cheesecake', (req, res) => {
+	res.json({
+		id: 3,
+		title: "Cheesecake",
+		image: "img/new-york-cheesecake.jpg",
+		ingredients: [
+			"Ingrediente 1",
+			"Ingrediente 2",
+			"Ingrediente 3",
+			"Ingrediente 4",
+			"Ingrediente 5",
+			"Ingrediente 6",
+			"Ingrediente 7",
+			"Ingrediente 8",
+		],
+		description: [
+			"Descripción 1",
+			"Descripción 2",
+			"Descripción 3",
+			"Descripción 4",
+			"Descripción 5",
+		],
+		type: "Dulce",
+		style: "Tortas",
+		difficulty: "Media",
+		country: "Estados Unidos"
+	})
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

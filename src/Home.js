@@ -28,8 +28,8 @@ function Home() {
         <Card 
           title="Cheesecake" 
           description="Cheesecake"
-          picture="img/alto guiso.jpg"
-          route="/alto-guiso"
+          picture="img/new-york-cheesecake.jpg"
+          route="/cheesecake"
         />
 
         <Card 
