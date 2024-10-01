@@ -56,7 +56,7 @@ app.get('/api/alto-guiso', (req, res) => {
             "Sal, Orégano, Pimentón y Ají Molido: a gusto"
         ],
         description: ["Voy a empezar contando una historia que cambió mi vida: el 7 de agosto del 2011 fue la fecha 1 del Torneo Apertura del fútbol argentino y Lanús le ganó 1-0 a San Lorenzo de visitante en el Nuevo Gasómetro. Lo más	importante no fue la victoria sino una frase de un hincha del 'granate' que quedó para el recuerdo:",
-            "15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso",
+            "15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso.",
             "Para la mayoría de la gente es insólito que una frase tan simple como esa signifique tanto. Resulta que en la época 15 pesos argentinos para un paty de cancha era mucho dinero y para un alto guiso no estabas muy lejos en dinero. Fue tanto lo que generó que se hicieron memes, temas musicales y hasta se creó el 'Indice Alto Guiso'	para medir la inflación en relación al precio del guiso.",
             "Incluso encontraron al señor Alto Guiso muchos años después de la histórica frase. Una historia bien argentina	sobre la inflación.",
             "Ahora vamos a la receta. Realmente no hay mucho para explicar, el primer paso es cortar la carne en cubitos y sellarla en una cacerola grande, mientras tanto cortar las verduras. Cuando la carne esté sellada reservar.",

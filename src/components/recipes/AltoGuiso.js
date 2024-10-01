@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import '../../styles.css';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+import Quote from '../Quote';
 
 function AltoGuiso(){
     const [recipe, setRecipe] = useState(null);
@@ -21,8 +23,8 @@ function AltoGuiso(){
             <h1 className="title">{recipe ? recipe.title : 'Loading...'}</h1>
 
             <div className="banner-main">
-                <img src="img/alto guiso.jpg" className="banner-image" width="100%" alt="loading..." />
-            </div>
+                <Zoom><img src="img/alto guiso.jpg" className="banner-image" width="100%" alt="loading..." /></Zoom>
+            
 
             
                 <div className="ingredients">
@@ -33,6 +35,7 @@ function AltoGuiso(){
                         }) : "Loading..."}
                     </ul>
                 </div>
+            </div>
 
                 <div className="description">
                     
@@ -40,10 +43,16 @@ function AltoGuiso(){
                         if (index === 1){
                             return <div>
 
-                                <p><i><b>{num}</b></i></p>
+                                {/* <p><i><b>{num}</b></i></p> */}
+
+                                <Quote 
+                                    title={num}
+                                    author="Alto Guiso"
+                                    source="Paso a Paso"
+                                />
 
                                 <div className="banner">
-                                    <p><img src="img/alto-guiso.jpg" width="100%" height="20%" alt="loading..." /></p>
+                                    <p><Zoom><img src="img/alto-guiso.jpg" width="100%" height="20%" alt="loading..." /></Zoom></p>
                                 </div>
 
                             </div>

@@ -24,6 +24,14 @@
     margin: 4% 4%;
 }
 
+.title {
+    margin: 2% 0;
+}
+
+.banner-image {
+    width: 100%;
+}
+
 .ingredients {
     margin: 5% 0;
 }
@@ -63,6 +71,17 @@
         margin: 0 5%;
         justify-content: center;
     }
+
+    .banner-main {
+        display: flex;
+        margin: 2% 0;
+    }
+
+    .ingredients {
+        text-align: left;
+        margin: 0 2%;
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 992px){
@@ -81,11 +100,9 @@
 
     .ingredients {
         margin: 2% 0;
+        margin-left: 2%;
+        font-size: 17px;
     }
-	
-	.banner-image {
-		width: 90%;
-	}
 	
 	.banner-main {
 		text-align: center;
