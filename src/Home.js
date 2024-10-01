@@ -4,13 +4,15 @@ import Card from './components/RecipeCard';
 import Footer from './components/Footer';
 
 function Home() {
+
   return (
     <>
+
       <Header />
     
     <div className='cards'>
         <Card 
-          title="Guiso de Fideos Moñito" 
+          title="Guiso de fideos moñito"
           description="Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos"
           picture="img/guiso de fideos moñito.jpg"
           route="/guiso-moñito"

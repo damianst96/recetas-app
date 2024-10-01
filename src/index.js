@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
 import GuisoMoñito from './components/recipes/GuisoMoñito';
+import Cheesecake from './components/recipes/Cheesecake';
 // import RecipeDetail from './components/RecipeDetail';
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/guiso-moñito",
     element: <GuisoMoñito />
+  },
+  {
+    path: "/cheesecake",
+    element: <Cheesecake />
   },
 ]);
 
