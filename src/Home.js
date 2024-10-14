@@ -36,7 +36,7 @@ function Home() {
           title="Budín de Pan" 
           description="Budín de Pan"
           picture="img/alto guiso.jpg"
-          route="/alto-guiso"
+          route="/budin-de-pan"
         />
     </div>
 
