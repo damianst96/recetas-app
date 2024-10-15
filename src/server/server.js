@@ -70,6 +70,7 @@ app.get('/api/alto-guiso', (req, res) => {
             "Sin lavar la olla agregar las verduras y saltearlas con sal, luego volver a agregar la carne junto con el puré de tomate y un poco de agua o caldo hasta cubrir. Dejar cocinar por aproximadamente 40 minutos hasta que el líquido se reduzca. Servir muy caliente apenas apagado el fuego.",
             "Esta es una de las recetas más personalizables que existen. Se pueden agregar o reemplazar ingredientes como gusten: se puede agregar vino, legumbres, chorizo colorado, pollo...el cielo es el límite."
         ],
+		altImage: "img/alto-guiso.jpg",
 		type: "Salado",
 		style: "Guisos",
 		difficulty: "Fácil",

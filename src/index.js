@@ -32,6 +32,7 @@ const router = createBrowserRouter([
     element: <RecipeDetail
 		api='/api/alto-guiso'
 		image='img/new-york-cheesecake.jpg'
+		altImage="img/alto-guiso.jpg"
 	/>
   },
 ]);

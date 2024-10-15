@@ -38,7 +38,12 @@ function RecipeDetail(props){
                     {recipe ? recipe.description.map(function(i) {
                         return <p>{i}<br></br></p>
                     }) : "Loading..."}
+					{/*props.description*/}
                 </div>
+				
+				<div className="banner">
+					<p><Zoom><img src={props.altImage} width="100%" height="20%" alt="loading..." /></Zoom></p>
+				</div>
             </main>
 
             <Footer />
