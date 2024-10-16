@@ -18,17 +18,14 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action2">Link</Nav.Link>
-			<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-				<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-				<NavDropdown.Item href="#action/3.2">
-				  Another action
-				</NavDropdown.Item>
-				<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <Nav.Link href="#action2">Todas las recetas</Nav.Link>
+			<NavDropdown title="Filtrar recetas" id="basic-nav-dropdown">
+				<NavDropdown.Item href="#action/3.1">Dulces</NavDropdown.Item>
+				<NavDropdown.Item href="#action/3.3">Saladas</NavDropdown.Item>
 				<NavDropdown.Divider />
-				<NavDropdown.Item href="#action/3.4">
-				  Separated link
-				</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Fáciles</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Medias</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Difíciles</NavDropdown.Item>
 			</NavDropdown>
           </Nav>
         </Navbar.Collapse>
