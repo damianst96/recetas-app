@@ -8,7 +8,6 @@ import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
 import GuisoMoñito from './components/recipes/GuisoMoñito';
 import Cheesecake from './components/recipes/Cheesecake';
-import RecipeDetail from './components/RecipeDetail';
 // import RecipeDetail from './components/RecipeDetail';
 
 const router = createBrowserRouter([
@@ -27,13 +26,6 @@ const router = createBrowserRouter([
   {
     path: "/cheesecake",
     element: <Cheesecake />
-  },
-  {
-    path: "/budin-de-pan",
-    element: <RecipeDetail 
-      link="/api/cheesecake"
-      image="img/new-york-cheesecake.jpg"
-    />
   },
 ]);
 

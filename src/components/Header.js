@@ -30,6 +30,7 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Container>
+	  
       <Form className="d-flex">
           <Form.Control
             type="search"
