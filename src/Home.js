@@ -35,7 +35,7 @@ function Home() {
         <Card 
           title="Budín de Pan" 
           description="Budín de Pan"
-          picture="img/alto guiso.jpg"
+          picture="img/budin de pan2.jpg"
           route="/budin-de-pan"
         />
     </div>

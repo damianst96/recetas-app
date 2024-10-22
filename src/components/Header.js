@@ -18,7 +18,7 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action2">Todas las recetas</Nav.Link>
+            <Nav.Link href="/todas-las-recetas">Todas las recetas</Nav.Link>
 			<NavDropdown title="Filtrar recetas" id="basic-nav-dropdown">
 				<NavDropdown.Item href="#action/3.1">Dulces</NavDropdown.Item>
 				<NavDropdown.Item href="#action/3.3">Saladas</NavDropdown.Item>

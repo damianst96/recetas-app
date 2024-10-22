@@ -7,7 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
 import GuisoMoñito from './components/recipes/GuisoMoñito';
+import RecipeDetail from './components/RecipeDetail';
 import Cheesecake from './components/recipes/Cheesecake';
+import AllRecipes from './components/AllRecipes';
 // import RecipeDetail from './components/RecipeDetail';
 
 const router = createBrowserRouter([
@@ -27,6 +29,18 @@ const router = createBrowserRouter([
     path: "/cheesecake",
     element: <Cheesecake />
   },
+  {
+    path: "/budin-de-pan",
+    element: <RecipeDetail
+      api="/api/budin-de-pan"
+      image="img/budin de pan2.jpg"
+      altImage="img/budin de pan.jpg"
+    />
+  },
+  {
+    path: "/todas-las-recetas",
+    element: <AllRecipes />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

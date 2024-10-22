@@ -6,14 +6,13 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function RecipeDetail(props){
     const [recipe, setRecipe] = useState(null);
-    let apiLink = props.link;
 
     useEffect(() => {
-        fetch(apiLink)
+        fetch(props.api)
             .then((response) => response.json())
             .then((data) => setRecipe(data))
             .catch((error) => console.error('Error fetching data:', error));
-    }, [apiLink]);
+    }, [props.api]);
 
     return(
         <>
@@ -39,6 +38,10 @@ function RecipeDetail(props){
                     {recipe ? recipe.description.map(function(i) {
                         return <p>{i}<br></br></p>
                     }) : "Loading..."}
+
+                    <div className="banner">
+                        <p><Zoom><img src={props.altImage} width="100%" height="20%" alt="loading..." /></Zoom></p>
+                    </div>
                 </div>
             </main>
 
