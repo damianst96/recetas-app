@@ -20,7 +20,7 @@ app.use(express.static(publicPath));
 // });
 
 // GUISO DE FIDEOS MOÑITO
-let GuisoMoñito = app.get('/api/guiso-monito', (req, res) => {
+app.get('/api/guiso-monito', (req, res) => {
     res.json({ 
         id: 1,
         title: 'Guiso de Fideos Moñito',
@@ -34,6 +34,7 @@ let GuisoMoñito = app.get('/api/guiso-monito', (req, res) => {
             "Ajo: 2 dientes",
             "Sal, Orégano, Pimentón y Ají Molido: a gusto"
         ],
+        descriptionShort: "Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos",
         description: ["Esta receta es un homenaje a un hincha de Talleres que dijo que haría un guiso de fideos moñito en una cena romántica con su señora. No dudo ni un solo segundo en responder a la pregunta.",
             "Esto es algo económico y muy sencillo ideal para el invierno. Primero vamos a picar la carne y la vamos a saltear vuelta y vuelta con aceite en una cacerola grande. Al mismo tiempo picamos la cebolla, zanahoria y ajo. Cuando la carne esté sellada la reservamos y salteamos las verduras con sal hasta que estén blandas.",
             "Volvemos a colocar la carne y luego incorporamos el puré de tomate y un poco de agua o caldo hasta cubrir.	Dejamos cocinar por 40 minutos aproximadamente y al final agregamos los fideos moñito, mezclamos todo hasta que	los fideos estén un poco menos cocidos que al dente y apagamos el fuego. Servir bien caliente.",
@@ -47,7 +48,7 @@ let GuisoMoñito = app.get('/api/guiso-monito', (req, res) => {
 });
 
 // ALTO GUISO
-let AltoGuiso = app.get('/api/alto-guiso', (req, res) => {
+app.get('/api/alto-guiso', (req, res) => {
     res.json({ 
         id: 2,
         title: 'Alto Guiso',
@@ -61,6 +62,7 @@ let AltoGuiso = app.get('/api/alto-guiso', (req, res) => {
             "Ajo: 2 dientes",
             "Sal, Orégano, Pimentón y Ají Molido: a gusto"
         ],
+        descriptionShort: "15 peso' sale un paty acá, con 15 peso' me hago Alto Guiso",
         description: ["Voy a empezar contando una historia que cambió mi vida: el 7 de agosto del 2011 fue la fecha 1 del Torneo Apertura del fútbol argentino y Lanús le ganó 1-0 a San Lorenzo de visitante en el Nuevo Gasómetro. Lo más	importante no fue la victoria sino una frase de un hincha del 'granate' que quedó para el recuerdo:",
             "15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso.",
             "Para la mayoría de la gente es insólito que una frase tan simple como esa signifique tanto. Resulta que en la época 15 pesos argentinos para un paty de cancha era mucho dinero y para un alto guiso no estabas muy lejos en dinero. Fue tanto lo que generó que se hicieron memes, temas musicales y hasta se creó el 'Indice Alto Guiso'	para medir la inflación en relación al precio del guiso.",
@@ -78,7 +80,7 @@ let AltoGuiso = app.get('/api/alto-guiso', (req, res) => {
 });
 
 // CHEESECAKE
-let Cheesecake = app.get('/api/cheesecake', (req, res) => {
+app.get('/api/cheesecake', (req, res) => {
 	res.json({
 		id: 3,
 		title: "Cheesecake",
@@ -93,6 +95,7 @@ let Cheesecake = app.get('/api/cheesecake', (req, res) => {
 			"Ingrediente 7",
 			"Ingrediente 8",
 		],
+        descriptionShort: "Cheesecake",
 		description: [
 			"Descripción 1",
 			"Descripción 2",
@@ -108,11 +111,12 @@ let Cheesecake = app.get('/api/cheesecake', (req, res) => {
 })
 
 // BUDIN DE PAN
-let BudinDePan = app.get('/api/budin-de-pan', (req, res) => {
+app.get('/api/budin-de-pan', (req, res) => {
 	res.json({
 		id: 4,
 		title: "Budín de Pan",
 		image: "img/budin de pan2.jpg",
+        altImage: "img/budin de pan.jpg",
 		ingredients: [
 			"Pan: 500 grs",
 			"Leche: 1 litro",
@@ -120,6 +124,7 @@ let BudinDePan = app.get('/api/budin-de-pan', (req, res) => {
 			"Azúcar: 200 grs para el budín y 200 para el caramelo",
 			"Esencia de vainilla: c/n",
 		],
+        descriptionShort: "Budín de Pan",
 		description: [
 			"Este se va a transformar en uno de tus postres favoritos. Con pan viejo y muy pocos ingredientes podés hacer un postre de calidad de restaurante por muy poco dinero. Llevalo a un asado familiar y te van a amar.",
 			"Empezamos cortando el pan en pedacitos con la mano y lo bañamos en 1 litro de leche, lo dejamos reposar en la heladera mientras preparamos el resto.",
@@ -140,11 +145,12 @@ app.get('/api', (req, res) => {
         recipes: [
 
             // GUISO DE FIDEOS MOÑITO
-            {
+            {   
                 id: 1,
                 link: "/guiso-moñito",
                 title: 'Guiso de Fideos Moñito',
                 image: "img/guiso de fideos moñito.jpg",
+                altImage: "img/jony de primero de mayo.jpg",
                 ingredients: [
                     "Fideos Moñito: medio paquete",
                     "Corte de carne económico: aprox. 500grs (puede ser de vaca o de cerdo)",
@@ -154,6 +160,7 @@ app.get('/api', (req, res) => {
                     "Ajo: 2 dientes",
                     "Sal, Orégano, Pimentón y Ají Molido: a gusto"
                 ],
+                descriptionShort: "Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos",
                 description: ["Esta receta es un homenaje a un hincha de Talleres que dijo que haría un guiso de fideos moñito en una cena romántica con su señora. No dudo ni un solo segundo en responder a la pregunta.",
                     "Esto es algo económico y muy sencillo ideal para el invierno. Primero vamos a picar la carne y la vamos a saltear vuelta y vuelta con aceite en una cacerola grande. Al mismo tiempo picamos la cebolla, zanahoria y ajo. Cuando la carne esté sellada la reservamos y salteamos las verduras con sal hasta que estén blandas.",
                     "Volvemos a colocar la carne y luego incorporamos el puré de tomate y un poco de agua o caldo hasta cubrir.	Dejamos cocinar por 40 minutos aproximadamente y al final agregamos los fideos moñito, mezclamos todo hasta que	los fideos estén un poco menos cocidos que al dente y apagamos el fuego. Servir bien caliente.",
@@ -162,7 +169,7 @@ app.get('/api', (req, res) => {
                 type: "Salado",
                 style: "Guisos",
                 difficulty: "Fácil",
-                country: "Argentina"
+                country: "Argentina"            
             },
 
             // ALTO GUISO
@@ -171,6 +178,7 @@ app.get('/api', (req, res) => {
                 link: "/alto-guiso",
                 title: 'Alto Guiso',
                 image: "img/alto guiso.jpg",
+                altImage: "img/alto-guiso.jpg",
                 ingredients: [
                     "Corte de carne económico: aprox. 600grs (puede ser de vaca o de cerdo)",
                     "Fideos, Arroz o legumbres: aprox. 250grs",
@@ -180,6 +188,7 @@ app.get('/api', (req, res) => {
                     "Ajo: 2 dientes",
                     "Sal, Orégano, Pimentón y Ají Molido: a gusto"
                 ],
+                descriptionShort: "15 peso' sale un paty acá, con 15 peso' me hago Alto Guiso",
                 description: ["Voy a empezar contando una historia que cambió mi vida: el 7 de agosto del 2011 fue la fecha 1 del Torneo Apertura del fútbol argentino y Lanús le ganó 1-0 a San Lorenzo de visitante en el Nuevo Gasómetro. Lo más	importante no fue la victoria sino una frase de un hincha del 'granate' que quedó para el recuerdo:",
                     "15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso.",
                     "Para la mayoría de la gente es insólito que una frase tan simple como esa signifique tanto. Resulta que en la época 15 pesos argentinos para un paty de cancha era mucho dinero y para un alto guiso no estabas muy lejos en dinero. Fue tanto lo que generó que se hicieron memes, temas musicales y hasta se creó el 'Indice Alto Guiso'	para medir la inflación en relación al precio del guiso.",
@@ -201,6 +210,7 @@ app.get('/api', (req, res) => {
                 link: "/cheesecake",
                 title: "Cheesecake",
                 image: "img/new-york-cheesecake.jpg",
+                altImage: "",
                 ingredients: [
                     "Ingrediente 1",
                     "Ingrediente 2",
@@ -211,6 +221,7 @@ app.get('/api', (req, res) => {
                     "Ingrediente 7",
                     "Ingrediente 8",
                 ],
+                descriptionShort: "Cheesecake",
                 description: [
                     "Descripción 1",
                     "Descripción 2",
@@ -226,10 +237,11 @@ app.get('/api', (req, res) => {
 
             // BUDIN DE PAN
             {
-                id: 4,
+                id: "4",
                 link: "/budin-de-pan",
                 title: "Budín de Pan",
                 image: "img/budin de pan2.jpg",
+                altImage: "img/budin de pan.jpg",
                 ingredients: [
                     "Pan: 500 grs",
                     "Leche: 1 litro",
@@ -237,6 +249,7 @@ app.get('/api', (req, res) => {
                     "Azúcar: 200 grs para el budín y 200 para el caramelo",
                     "Esencia de vainilla: c/n",
                 ],
+                descriptionShort: "Budín de Pan",
                 description: [
                     "Este se va a transformar en uno de tus postres favoritos. Con pan viejo y muy pocos ingredientes podés hacer un postre de calidad de restaurante por muy poco dinero. Llevalo a un asado familiar y te van a amar.",
                     "Empezamos cortando el pan en pedacitos con la mano y lo bañamos en 1 litro de leche, lo dejamos reposar en la heladera mientras preparamos el resto.",

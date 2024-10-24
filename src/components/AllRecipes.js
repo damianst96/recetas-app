@@ -9,7 +9,7 @@ function AllRecipes(){
     useEffect(() => {
         fetch("/api")
             .then((response) => response.json())
-            .then((data) => setRecipe(data))
+            .then((data) => setRecipe(data.recipes))
             .catch((error) => console.error('Error fetching data:', error));
     }, []);
 
@@ -19,7 +19,7 @@ function AllRecipes(){
         <Header />
         
         <div className="cards">
-            {recipe ? recipe.recipes.map(function(i){
+            {recipe ? recipe.map(function(i){
                 return <Card
                     title={i.title}
                     picture={i.image}

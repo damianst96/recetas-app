@@ -5,44 +5,51 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 
 function RecipeDetail(props){
-    const [recipe, setRecipe] = useState(null);
+    const [recipe, setRecipe] = useState([]);
 
     useEffect(() => {
-        fetch(props.api)
+        fetch("/api")
             .then((response) => response.json())
-            .then((data) => setRecipe(data))
+            .then(data => {
+                const recetaFiltrada = data.recipes.find(r => r === data.recipes[props.id]);  // Filtras por el ID que te interesa
+                setRecipe(recetaFiltrada);
+            })
             .catch((error) => console.error('Error fetching data:', error));
-    }, [props.api]);
+    }, [props.id]);
+
+    console.log(recipe.ingredients);
+    console.log(recipe.description);
 
     return(
         <>
             <Header />
 
             <main className="recipe">
-            <h1 className="title">{recipe ? recipe.title : 'Loading...'}</h1>
-
-            <div className="banner-main">
-                <Zoom><img src={props.image} className="banner-image" width="100%" alt="loading..." /></Zoom>
-            
-                <div className="ingredients">
-                    <h5>Ingredientes:</h5>
-                    <ul>
-                        {recipe ? recipe.ingredients.map(function(i) {
-                            return <li>{i}</li>
-                        }) : "Loading..."}
-                    </ul>
+                <h1 className="title">{recipe ? recipe.title : 'Loading...'}</h1>
+                    
+                <div className="banner-main">
+                    <Zoom><img src={recipe ? recipe.image : "Loading..."} className="banner-image" width="100%" alt="loading..." /></Zoom>
+                                
+                    <div className="ingredients">
+                        <h5>Ingredientes:</h5>
+                        <ul>
+                            {recipe ? recipe.ingredients && recipe.ingredients.map(function(i) {
+                                return <li>{i}</li>
+                            }) : "Loading..."}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-                
+                                    
                 <div className="description">
-                    {recipe ? recipe.description.map(function(i) {
+                    {recipe ? recipe.description && recipe.description.map(function(i) {
                         return <p>{i}<br></br></p>
                     }) : "Loading..."}
 
                     <div className="banner">
-                        <p><Zoom><img src={props.altImage} width="100%" height="20%" alt="loading..." /></Zoom></p>
+                        <p><Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom></p>
                     </div>
                 </div>
+
             </main>
 
             <Footer />

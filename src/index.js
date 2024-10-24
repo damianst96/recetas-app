@@ -6,11 +6,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
-import GuisoMoñito from './components/recipes/GuisoMoñito';
+// import GuisoMoñito from './components/recipes/GuisoMoñito';
 import RecipeDetail from './components/RecipeDetail';
-import Cheesecake from './components/recipes/Cheesecake';
+// import Cheesecake from './components/recipes/Cheesecake';
 import AllRecipes from './components/AllRecipes';
-// import RecipeDetail from './components/RecipeDetail';
 
 const router = createBrowserRouter([
   {
@@ -23,18 +22,20 @@ const router = createBrowserRouter([
   },
   {
     path: "/guiso-moñito",
-    element: <GuisoMoñito />
+    element: <RecipeDetail
+      id={0} 
+    />
   },
   {
     path: "/cheesecake",
-    element: <Cheesecake />
+    element: <RecipeDetail
+      id={2}
+    />
   },
   {
     path: "/budin-de-pan",
     element: <RecipeDetail
-      api="/api/budin-de-pan"
-      image="img/budin de pan2.jpg"
-      altImage="img/budin de pan.jpg"
+      id={3}
     />
   },
   {
