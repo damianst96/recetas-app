@@ -10,6 +10,8 @@ import AltoGuiso from './components/recipes/AltoGuiso';
 import RecipeDetail from './components/RecipeDetail';
 // import Cheesecake from './components/recipes/Cheesecake';
 import AllRecipes from './components/AllRecipes';
+import SweetRecipes from './components/SweetRecipes';
+import SaltyRecipes from './components/SaltyRecipes';
 
 const router = createBrowserRouter([
   {
@@ -41,7 +43,15 @@ const router = createBrowserRouter([
   {
     path: "/todas-las-recetas",
     element: <AllRecipes />
-  }
+  },
+  {
+    path: "/dulces",
+    element: <SweetRecipes />
+  },
+  {
+    path: "/saladas",
+    element: <SaltyRecipes />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

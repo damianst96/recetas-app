@@ -20,8 +20,8 @@ function Header() {
           >
             <Nav.Link href="/todas-las-recetas">Todas las recetas</Nav.Link>
 			<NavDropdown title="Filtrar recetas" id="basic-nav-dropdown">
-				<NavDropdown.Item href="#action/3.1">Dulces</NavDropdown.Item>
-				<NavDropdown.Item href="#action/3.3">Saladas</NavDropdown.Item>
+				<NavDropdown.Item href="/dulces">Dulces</NavDropdown.Item>
+				<NavDropdown.Item href="/saladas">Saladas</NavDropdown.Item>
 				<NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.3">Fáciles</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Medias</NavDropdown.Item>
