@@ -6,9 +6,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
-import GuisoMoñito from './components/recipes/GuisoMoñito';
-import Cheesecake from './components/recipes/Cheesecake';
-// import RecipeDetail from './components/RecipeDetail';
+// import GuisoMoñito from './components/recipes/GuisoMoñito';
+import RecipeDetail from './components/RecipeDetail';
+// import Cheesecake from './components/recipes/Cheesecake';
+import AllRecipes from './components/AllRecipes';
+import SweetRecipes from './components/SweetRecipes';
+import SaltyRecipes from './components/SaltyRecipes';
 
 const router = createBrowserRouter([
   {
@@ -21,11 +24,33 @@ const router = createBrowserRouter([
   },
   {
     path: "/guiso-moñito",
-    element: <GuisoMoñito />
+    element: <RecipeDetail
+      id={0} 
+    />
   },
   {
     path: "/cheesecake",
-    element: <Cheesecake />
+    element: <RecipeDetail
+      id={2}
+    />
+  },
+  {
+    path: "/budin-de-pan",
+    element: <RecipeDetail
+      id={3}
+    />
+  },
+  {
+    path: "/todas-las-recetas",
+    element: <AllRecipes />
+  },
+  {
+    path: "/dulces",
+    element: <SweetRecipes />
+  },
+  {
+    path: "/saladas",
+    element: <SaltyRecipes />
   },
 ]);
 

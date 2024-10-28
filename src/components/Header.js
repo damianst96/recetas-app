@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles.css';
 
 function Header() {
@@ -17,10 +18,19 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="/todas-las-recetas">Todas las recetas</Nav.Link>
+			<NavDropdown title="Filtrar recetas" id="basic-nav-dropdown">
+				<NavDropdown.Item href="/dulces">Dulces</NavDropdown.Item>
+				<NavDropdown.Item href="/saladas">Saladas</NavDropdown.Item>
+				<NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.3">Fáciles</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Medias</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Difíciles</NavDropdown.Item>
+			</NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
+	  
       <Form className="d-flex">
           <Form.Control
             type="search"

@@ -1,43 +1,33 @@
 import './App.css';
+import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Card from './components/RecipeCard';
 import Footer from './components/Footer';
 
 function Home() {
+  const [recipe, setRecipe] = useState(null);
+
+  useEffect(() => {
+    fetch("/api")
+      .then((response) => response.json())
+      .then((data) => setRecipe(data.recipes))
+      .catch((error) => console.error('Error fetching data:', error));
+  }, []);
 
   return (
     <>
 
-      <Header />
-    
-    <div className='cards'>
-        <Card 
-          title="Guiso de fideos moñito"
-          description="Una receta en homenaje a Johnny el hincha de Talleres, manjar de los dioses con los mejores fideos"
-          picture="img/guiso de fideos moñito.jpg"
-          route="/guiso-moñito"
-        />
+    <Header />
 
-        <Card 
-          title="Alto Guiso" 
-          description="15 peso' sale un paty acá, con 15 peso' me hago Alto Guiso"
-          picture="img/alto guiso.jpg"
-          route="/alto-guiso"
-        />
-
-        <Card 
-          title="Cheesecake" 
-          description="Cheesecake"
-          picture="img/alto guiso.jpg"
-          route="/alto-guiso"
-        />
-
-        <Card 
-          title="Budín de Pan" 
-          description="Budín de Pan"
-          picture="img/alto guiso.jpg"
-          route="/alto-guiso"
-        />
+    <div className="cards">
+        {recipe ? recipe.map(function(i){
+          return <Card
+            title={i.title}
+            description={i.descriptionShort}
+            picture={i.image}
+            route={i.link}
+          />
+        }) : "Loading..."}
     </div>
 
       <Footer />
