@@ -23,9 +23,23 @@ function Header() {
 				<NavDropdown.Item href="/dulces">Dulces</NavDropdown.Item>
 				<NavDropdown.Item href="/saladas">Saladas</NavDropdown.Item>
 				<NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.3">Fáciles</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Medias</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Difíciles</NavDropdown.Item>
+        <NavDropdown.Item href="#">Fáciles</NavDropdown.Item>
+        <NavDropdown.Item href="#">Medias</NavDropdown.Item>
+        <NavDropdown.Item href="#">Difíciles</NavDropdown.Item>
+			</NavDropdown>
+			<NavDropdown title="Recetas por país" id="basic-nav-dropdown">
+				<NavDropdown.Item href="#">Argentina</NavDropdown.Item>
+				<NavDropdown.Item href="#">Caribe</NavDropdown.Item>
+				<NavDropdown.Item href="#">China</NavDropdown.Item>
+				<NavDropdown.Item href="#">España</NavDropdown.Item>
+				<NavDropdown.Item href="#">Estados Unidos</NavDropdown.Item>
+				<NavDropdown.Item href="#">India</NavDropdown.Item>
+				<NavDropdown.Item href="#">Italia</NavDropdown.Item>
+				<NavDropdown.Item href="#">Japón</NavDropdown.Item>
+				<NavDropdown.Item href="#">Medio Oriente</NavDropdown.Item>
+				<NavDropdown.Item href="#">México</NavDropdown.Item>
+				<NavDropdown.Item href="#">Uruguay</NavDropdown.Item>
+				<NavDropdown.Item href="#">Venezuela</NavDropdown.Item>
 			</NavDropdown>
           </Nav>
         </Navbar.Collapse>
