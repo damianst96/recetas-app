@@ -17,9 +17,6 @@ function RecipeDetail(props){
             .catch((error) => console.error('Error fetching data:', error));
     }, [props.id]);
 
-    console.log(recipe.ingredients);
-    console.log(recipe.description);
-
     return(
         <>
             <Header />
