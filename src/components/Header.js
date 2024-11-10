@@ -1,12 +1,16 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles.css';
+// import { useState } from 'react';
+import SearchForm from './SearchForm';
+// import RecipeSearch from './RecipeSearch';
 
 function Header() {
+  
   return (
     <Navbar expand="lg" className="navbar">
       <Container fluid className="container">
@@ -23,23 +27,44 @@ function Header() {
 				<NavDropdown.Item href="/dulces">Dulces</NavDropdown.Item>
 				<NavDropdown.Item href="/saladas">Saladas</NavDropdown.Item>
 				<NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.3">Fáciles</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Medias</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Difíciles</NavDropdown.Item>
+        <NavDropdown.Item href="#">Fáciles</NavDropdown.Item>
+        <NavDropdown.Item href="#">Medias</NavDropdown.Item>
+        <NavDropdown.Item href="#">Difíciles</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#">Menúes</NavDropdown.Item>
+			</NavDropdown>
+			<NavDropdown title="Recetas por país" id="basic-nav-dropdown">
+				<NavDropdown.Item href="#">Argentina</NavDropdown.Item>
+				<NavDropdown.Item href="#">Caribe</NavDropdown.Item>
+				<NavDropdown.Item href="#">China</NavDropdown.Item>
+				<NavDropdown.Item href="#">España</NavDropdown.Item>
+				<NavDropdown.Item href="#">Estados Unidos</NavDropdown.Item>
+				<NavDropdown.Item href="#">India</NavDropdown.Item>
+				<NavDropdown.Item href="#">Italia</NavDropdown.Item>
+				<NavDropdown.Item href="#">Japón</NavDropdown.Item>
+				<NavDropdown.Item href="#">Medio Oriente</NavDropdown.Item>
+				<NavDropdown.Item href="#">México</NavDropdown.Item>
+				<NavDropdown.Item href="#">Uruguay</NavDropdown.Item>
+				<NavDropdown.Item href="#">Venezuela</NavDropdown.Item>
 			</NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
 	  
-      <Form className="d-flex">
-          <Form.Control
-            type="search"
-            placeholder="Buscar recetas"
-            className="me-2"
-            aria-label="Search"
-          />
-        <Button variant="outline-success" className="search">Buscar</Button>
-      </Form>
+      <SearchForm />
+      {/* <Form className="d-flex" onSubmit={handleSearch}>
+      <input
+        type="search"
+        placeholder="Buscar recetas"
+        className="me-2"
+        aria-label="Search"
+        onChange={(e) => setQuery(e.target.value)}
+        value={query}
+      />
+      <Button type="submit" variant="outline-success" className="search" href={`/search?title=${query}`}>
+        Buscar
+      </Button>
+    </Form> */}
     </Navbar>
   );
 }

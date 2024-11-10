@@ -12,6 +12,7 @@ import RecipeDetail from './components/RecipeDetail';
 import AllRecipes from './components/AllRecipes';
 import SweetRecipes from './components/SweetRecipes';
 import SaltyRecipes from './components/SaltyRecipes';
+import RecipeSearch from './components/RecipeSearch';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/saladas",
     element: <SaltyRecipes />
+  },
+  {
+    path: "/search",
+    element: <RecipeSearch />
   },
 ]);
 
