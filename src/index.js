@@ -13,6 +13,7 @@ import AllRecipes from './components/AllRecipes';
 import SweetRecipes from './components/SweetRecipes';
 import SaltyRecipes from './components/SaltyRecipes';
 import RecipeSearch from './components/RecipeSearch';
+import Guisos from './components/Guisos';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/search",
     element: <RecipeSearch />
+  },
+  {
+    path: "/guisos",
+    element: <Guisos />
   },
 ]);
 
