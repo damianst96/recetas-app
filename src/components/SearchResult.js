@@ -4,21 +4,23 @@ import Card from './RecipeCard';
 
 function SearchResult({ results }) {
     return (
-      <div>
+      <>
         <Header />
-        {results.length === 0 ? (
-          <p>No se encontraron recetas</p>
-        ) : (
-            results.map((recipe) => (
-              <Card 
-                title={recipe.title}
-                picture={recipe.image}
-                route={recipe.link}
-              />
-            ))
-        )}
+			<div className="cards">
+			{results.length === 0 ? (
+			  <p>No se encontraron recetas</p>
+			) : (
+				results.map((recipe) => (
+				  <Card 
+					title={recipe.title}
+					picture={recipe.image}
+					route={recipe.link}
+				  />
+				))
+			)}
+			</div>
         <Footer />
-      </div>
+      </>
     );
   }
 

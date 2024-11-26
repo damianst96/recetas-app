@@ -18,9 +18,9 @@ function RecipeSearch() {
 
   return (
     <>
-      {/* Pasar la función handleSearch como onSearch al componente SearchForm */}
-      <SearchForm onSearch={handleSearch} />
-      <SearchResult results={results} />
+		{/* Pasar la función handleSearch como onSearch al componente SearchForm */}
+		<SearchForm onSearch={handleSearch} />
+		<SearchResult results={results} />
     </>
   );
 }
