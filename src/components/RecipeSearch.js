@@ -2,7 +2,7 @@ import { useState } from 'react';
 import SearchForm from './SearchForm';
 import SearchResult from './SearchResult';
 
-function RecipeSearch() {
+function RecipeSearch(r) {
   const [results, setResults] = useState([]);
 
   // Definir la función handleSearch que realiza la búsqueda en la API

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -12,8 +12,26 @@ import RecipeDetail from './components/RecipeDetail';
 import AllRecipes from './components/AllRecipes';
 import SweetRecipes from './components/SweetRecipes';
 import SaltyRecipes from './components/SaltyRecipes';
-import RecipeSearch from './components/RecipeSearch';
+// import RecipeSearch from './components/RecipeSearch';
 import Guisos from './components/Guisos';
+import SearchResult from './components/SearchResult';
+
+
+
+	
+
+  // Definir la función handleSearch que realiza la búsqueda en la API
+  export const HandleSearch = async (query) => {
+	  const [results, setResults] = useState([]);
+    try {
+      const response = await fetch(`/api?title=${results}`);
+      const data = await response.json();
+      setResults(data.recipes); // Guardar los resultados en el estado
+    } catch (error) {
+      console.error('Error al buscar recetas:', error);
+    }
+  };
+
 
 const router = createBrowserRouter([
   {
@@ -56,7 +74,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/search",
-    element: <RecipeSearch />
+    element: <SearchResult results={HandleSearch} />
   },
   {
     path: "/guisos",
