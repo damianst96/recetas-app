@@ -23,7 +23,7 @@ function SearchResult({ results }) {
 				{resultados.length === 0 ? (
 				  <p>No se encontraron recetas</p>
 				) : (
-					results.map((recipe) => (
+					resultados.map((recipe) => (
 					  <Card 
 						title={recipe.title}
 						picture={recipe.image}

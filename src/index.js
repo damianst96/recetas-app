@@ -21,7 +21,7 @@ import SearchResult from './components/SearchResult';
 	
 
   // Definir la función handleSearch que realiza la búsqueda en la API
-  export const HandleSearch = async (query) => {
+  export const HandleSearch = async () => {
 	  const [results, setResults] = useState([]);
     try {
       const response = await fetch(`/api?title=${results}`);
