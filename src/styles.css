@@ -28,6 +28,10 @@
     margin: 2% 0;
 }
 
+.main-title {
+    margin: 2% 0;
+}
+
 .banner-image {
     width: 100%;
 }
@@ -107,4 +111,8 @@
 	.banner-main {
 		text-align: center;
 	}
+
+    .main-title {
+        margin-bottom: 0;
+    }
 }

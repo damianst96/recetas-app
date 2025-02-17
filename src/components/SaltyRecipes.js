@@ -17,6 +17,10 @@ function SaltyRecipes(){
         <>
         
         <Header />
+
+        <main className='container'>
+            <h1 className='main-title'>Recetas saladas</h1>
+        </main>
         
         <div className="cards">
             {recipe ? recipe.map(function(i){

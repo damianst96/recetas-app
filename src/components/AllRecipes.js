@@ -17,6 +17,10 @@ function AllRecipes(){
         <>
         
         <Header />
+
+        <main className='container'>
+            <h1 className='main-title'>Todas las recetas</h1>
+        </main>
         
         <div className="cards">
             {recipe ? recipe.map(function(i){

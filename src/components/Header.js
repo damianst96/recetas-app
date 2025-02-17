@@ -61,16 +61,16 @@ function Header({ onSearch }) {
 			</NavDropdown>
 			
 			<NavDropdown title="Recetas por país" id="basic-nav-dropdown">
-				<NavDropdown.Item href="#">Argentina</NavDropdown.Item>
+				<NavDropdown.Item href="/argentina">Argentina</NavDropdown.Item>
 				<NavDropdown.Item href="#">China</NavDropdown.Item>
 				<NavDropdown.Item href="#">España</NavDropdown.Item>
-				<NavDropdown.Item href="#">Estados Unidos</NavDropdown.Item>
+				<NavDropdown.Item href="/eeuu">Estados Unidos</NavDropdown.Item>
 				<NavDropdown.Item href="#">India</NavDropdown.Item>
 				<NavDropdown.Item href="#">Italia</NavDropdown.Item>
 				<NavDropdown.Item href="#">Japón</NavDropdown.Item>
 				<NavDropdown.Item href="#">Medio Oriente</NavDropdown.Item>
 				<NavDropdown.Item href="#">México</NavDropdown.Item>
-				<NavDropdown.Item href="#">Uruguay</NavDropdown.Item>
+				<NavDropdown.Item href="/uruguay">Uruguay</NavDropdown.Item>
 				<NavDropdown.Item href="#">Venezuela</NavDropdown.Item>
 			</NavDropdown>
           </Nav>

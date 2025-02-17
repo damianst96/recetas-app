@@ -17,6 +17,10 @@ function SweetRecipes(){
         <>
         
         <Header />
+
+        <main className='container'>
+            <h1 className='main-title'>Guisos</h1>
+        </main>
         
         <div className="cards">
             {recipe ? recipe.map(function(i){

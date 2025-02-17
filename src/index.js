@@ -15,9 +15,9 @@ import SaltyRecipes from './components/SaltyRecipes';
 // import RecipeSearch from './components/RecipeSearch';
 import Guisos from './components/Guisos';
 import SearchResult from './components/SearchResult';
-
-
-
+import Argentina from './components/Argentina';
+import UnitedStates from './components/UnitedStates';
+import Uruguay from './components/Uruguay';
 	
 
   // Definir la función handleSearch que realiza la búsqueda en la API
@@ -79,6 +79,18 @@ const router = createBrowserRouter([
   {
     path: "/guisos",
     element: <Guisos />
+  },
+  {
+    path: "/argentina",
+    element: <Argentina />
+  },
+  {
+    path: "/eeuu",
+    element: <UnitedStates />
+  },
+  {
+    path: "/uruguay",
+    element: <Uruguay />
   },
 ]);
 
