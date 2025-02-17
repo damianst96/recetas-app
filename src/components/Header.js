@@ -7,15 +7,15 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles.css';
 import { useState } from 'react';
 import SearchForm from './SearchForm';
-import SearchResult from './SearchResult';
+// import SearchResult from './SearchResult';
 
 function Header({ onSearch }) {
 	const [results, setResults] = useState([]);
 
   // Definir la función handleSearch que realiza la búsqueda en la API
-  const handleSearch = async (query) => {
+  const handleSearch = async () => {
     try {
-      const response = await fetch(`/api?title=${query}`);
+      const response = await fetch(`/api?title=${results}`);
       const data = await response.json();
       setResults(data.recipes); // Guardar los resultados en el estado
     } catch (error) {
