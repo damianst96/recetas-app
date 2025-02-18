@@ -7,7 +7,7 @@ function SearchForm({ onSearch }) {
   const [results, setResults] = useState([]);
 
   // Definir la función handleSearch que realiza la búsqueda en la API
-  const handleSearch = async () => {
+  async function handleSearch(){
     try {
       const response = await fetch(`/api?title=${results}`);
       const data = await response.json();

@@ -23,7 +23,7 @@ import MenuDetail from './components/MenuDetail';
 	
 
   // Definir la función handleSearch que realiza la búsqueda en la API
-  export const HandleSearch = async () => {
+  async function HandleSearch(){
 	  const [results, setResults] = useState([]);
     try {
       const response = await fetch(`/api?title=${results}`);
@@ -117,3 +117,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+export default HandleSearch;

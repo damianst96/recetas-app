@@ -6,9 +6,9 @@ import { useState } from 'react';
 function SearchResult({ results }) {
 	const [resultados, setResultados] = useState([]);
 	
-	const handleSearch = async (query) => {
+	async function handleSearch(){
 		try {
-		  const response = await fetch(`/api?title=${query}`);
+		  const response = await fetch(`/api?title=${results}`);
 		  const data = await response.json();
 		  setResultados(data); // Guarda los resultados en el estado
 		} catch (error) {
