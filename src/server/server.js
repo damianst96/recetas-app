@@ -305,15 +305,15 @@ app.get('/api', (req, res) => {
             id: 5,
             link: "/chicken-kitchen",
             title: "Menú Chicken Kitchen",
-            image: "img/menu chicken kitchen 2022.jpg",
-            altImage: "",
+            image: "img/chickenKitchen-Logo.png",
+            altImage: "img/MENU-CHICKEN-KITCHEN-2025.jpg",
             ingredients: [
                 
             ],
             descriptionShort: "Chicken Kitchen busca ofrecer opciones rápidas de pollo pero saludables",
             description: [
                 "Chicken Kitchen es una cadena de comida rápida de Florida especializada en pollo, pero busca ofrecer opciones saludables que te van a gustar mucho.",
-                "El 'Chop-Chop' es un nombre interesante para uno de sus platos estrella, combinando pollo con arroz y distintas variantes."
+                "El 'Chop-Chop' es un nombre interesante para uno de sus platos estrella, combinando pollo grillado con arroz en un bowl y distintas variantes."
             ],
             type: "Menú",
             style: "",

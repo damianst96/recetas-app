@@ -33,6 +33,10 @@ function MenuDetail(props){
                         return <p>{i}<br></br></p>
                     }) : "Loading..."}
                 </div>
+				
+				<div className="banner">
+                    <p><Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom></p>
+                </div>
 
             </main>
 

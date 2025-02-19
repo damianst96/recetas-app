@@ -20,6 +20,8 @@ import UnitedStates from './components/UnitedStates';
 import Uruguay from './components/Uruguay';
 import Menues from './components/Menues';
 import MenuDetail from './components/MenuDetail';
+import China from './components/China';
+import España from './components/España';
 	
 
   // Definir la función handleSearch que realiza la búsqueda en la API
@@ -103,6 +105,14 @@ const router = createBrowserRouter([
     element: <MenuDetail 
       id={4}
     />
+  },
+  {
+    path: "/china",
+    element: <China />
+  },
+  {
+    path: "/españa",
+    element: <España />
   },
 ]);
 
