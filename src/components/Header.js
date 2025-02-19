@@ -57,7 +57,7 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="#">Medias</NavDropdown.Item>
 				<NavDropdown.Item href="#">Difíciles</NavDropdown.Item>
 				<NavDropdown.Divider />
-				<NavDropdown.Item href="#">Menúes</NavDropdown.Item>
+				<NavDropdown.Item href="/menues">Menúes</NavDropdown.Item>
 			</NavDropdown>
 			
 			<NavDropdown title="Recetas por país" id="basic-nav-dropdown">
@@ -72,6 +72,36 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="#">México</NavDropdown.Item>
 				<NavDropdown.Item href="/uruguay">Uruguay</NavDropdown.Item>
 				<NavDropdown.Item href="#">Venezuela</NavDropdown.Item>
+			</NavDropdown>
+
+      <NavDropdown title="Buscar recetas" id="basic-nav-dropdown">
+				<NavDropdown.Item href="#">A</NavDropdown.Item>
+        <NavDropdown.Item href="#">B</NavDropdown.Item>
+        <NavDropdown.Item href="#">C</NavDropdown.Item>
+        <NavDropdown.Item href="#">D</NavDropdown.Item>
+        <NavDropdown.Item href="#">E</NavDropdown.Item>
+        <NavDropdown.Item href="#">F</NavDropdown.Item>
+        <NavDropdown.Item href="#">G</NavDropdown.Item>
+        <NavDropdown.Item href="#">H</NavDropdown.Item>
+        <NavDropdown.Item href="#">I</NavDropdown.Item>
+        <NavDropdown.Item href="#">J</NavDropdown.Item>
+        <NavDropdown.Item href="#">K</NavDropdown.Item>
+        <NavDropdown.Item href="#">L</NavDropdown.Item>
+        <NavDropdown.Item href="#">M</NavDropdown.Item>
+        <NavDropdown.Item href="#">N</NavDropdown.Item>
+        <NavDropdown.Item href="#">Ñ</NavDropdown.Item>
+        <NavDropdown.Item href="#">O</NavDropdown.Item>
+        <NavDropdown.Item href="#">P</NavDropdown.Item>
+        <NavDropdown.Item href="#">Q</NavDropdown.Item>
+        <NavDropdown.Item href="#">R</NavDropdown.Item>
+        <NavDropdown.Item href="#">S</NavDropdown.Item>
+        <NavDropdown.Item href="#">T</NavDropdown.Item>
+        <NavDropdown.Item href="#">U</NavDropdown.Item>
+        <NavDropdown.Item href="#">V</NavDropdown.Item>
+        <NavDropdown.Item href="#">W</NavDropdown.Item>
+        <NavDropdown.Item href="#">X</NavDropdown.Item>
+        <NavDropdown.Item href="#">Y</NavDropdown.Item>
+        <NavDropdown.Item href="#">Z</NavDropdown.Item>
 			</NavDropdown>
           </Nav>
         </Navbar.Collapse>

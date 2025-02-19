@@ -298,7 +298,28 @@ app.get('/api', (req, res) => {
             style: "Tortas",
             difficulty: "Media",
             country: "Argentina"
-        } 
+        },
+
+        // MENÚ CHICKEN KITCHEN
+        {
+            id: 5,
+            link: "/chicken-kitchen",
+            title: "Menú Chicken Kitchen",
+            image: "img/menu chicken kitchen 2022.jpg",
+            altImage: "",
+            ingredients: [
+                
+            ],
+            descriptionShort: "Chicken Kitchen busca ofrecer opciones rápidas de pollo pero saludables",
+            description: [
+                "Chicken Kitchen es una cadena de comida rápida de Florida especializada en pollo, pero busca ofrecer opciones saludables que te van a gustar mucho.",
+                "El 'Chop-Chop' es un nombre interesante para uno de sus platos estrella, combinando pollo con arroz y distintas variantes."
+            ],
+            type: "Menú",
+            style: "",
+            difficulty: "",
+            country: "Estados Unidos"
+        },
     ];
   
     const filteredRecipes = title

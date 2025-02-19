@@ -18,6 +18,8 @@ import SearchResult from './components/SearchResult';
 import Argentina from './components/Argentina';
 import UnitedStates from './components/UnitedStates';
 import Uruguay from './components/Uruguay';
+import Menues from './components/Menues';
+import MenuDetail from './components/MenuDetail';
 	
 
   // Definir la función handleSearch que realiza la búsqueda en la API
@@ -91,6 +93,16 @@ const router = createBrowserRouter([
   {
     path: "/uruguay",
     element: <Uruguay />
+  },
+  {
+    path: "/menues",
+    element: <Menues />
+  },
+  {
+    path: "/chicken-kitchen",
+    element: <MenuDetail 
+      id={4}
+    />
   },
 ]);
 
