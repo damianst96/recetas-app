@@ -33,7 +33,7 @@ function Uruguay(){
 				} else {
 					return null;
 				}
-            }) : "No se encontraron recetas"}
+            }) : "Loading..."}
         </div>
         
 
