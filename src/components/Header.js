@@ -35,19 +35,19 @@ function Header({ onSearch }) {
             navbarScroll
           >
             <NavDropdown title="Tipos de recetas" id="basic-nav-dropdown">
-				<NavDropdown.Item href="#">Arroz</NavDropdown.Item>
-				<NavDropdown.Item href="#">Carne</NavDropdown.Item>
-				<NavDropdown.Item href="#">Cocktails</NavDropdown.Item>
+				<NavDropdown.Item href="/arroz">Arroz</NavDropdown.Item>
+				<NavDropdown.Item href="/carne">Carne</NavDropdown.Item>
+				<NavDropdown.Item href="/cocktails">Cocktails</NavDropdown.Item>
 				<NavDropdown.Item href="/guisos">Guisos</NavDropdown.Item>
-				<NavDropdown.Item href="#">Panes y Pizzas</NavDropdown.Item>
-				<NavDropdown.Item href="#">Pasta</NavDropdown.Item>
-				<NavDropdown.Item href="#">Pollo</NavDropdown.Item>
-				<NavDropdown.Item href="#">Postres</NavDropdown.Item>
-				<NavDropdown.Item href="#">Sandwiches</NavDropdown.Item>
-        <NavDropdown.Item href="#">Sopas</NavDropdown.Item>
-				<NavDropdown.Item href="#">Tartas</NavDropdown.Item>
-				<NavDropdown.Item href="#">Tortas</NavDropdown.Item>
-				<NavDropdown.Item href="#">Veggie</NavDropdown.Item>
+				<NavDropdown.Item href="pan-pizza">Panes y Pizzas</NavDropdown.Item>
+				<NavDropdown.Item href="/pasta">Pasta</NavDropdown.Item>
+				<NavDropdown.Item href="pollo">Pollo</NavDropdown.Item>
+				<NavDropdown.Item href="/postres">Postres</NavDropdown.Item>
+				<NavDropdown.Item href="/sandwiches">Sandwiches</NavDropdown.Item>
+        <NavDropdown.Item href="/sopas">Sopas</NavDropdown.Item>
+				<NavDropdown.Item href="/tartas">Tartas</NavDropdown.Item>
+				<NavDropdown.Item href="/tortas">Tortas</NavDropdown.Item>
+				<NavDropdown.Item href="/veggie">Veggie</NavDropdown.Item>
 			</NavDropdown>
 			
 			<NavDropdown title="Filtrar recetas" id="basic-nav-dropdown">
@@ -66,13 +66,13 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="/china">China</NavDropdown.Item>
 				<NavDropdown.Item href="/españa">España</NavDropdown.Item>
 				<NavDropdown.Item href="/eeuu">Estados Unidos</NavDropdown.Item>
-				<NavDropdown.Item href="#">India</NavDropdown.Item>
-				<NavDropdown.Item href="#">Italia</NavDropdown.Item>
-				<NavDropdown.Item href="#">Japón</NavDropdown.Item>
-				<NavDropdown.Item href="#">Medio Oriente</NavDropdown.Item>
-				<NavDropdown.Item href="#">México</NavDropdown.Item>
+				<NavDropdown.Item href="/india">India</NavDropdown.Item>
+				<NavDropdown.Item href="/italia">Italia</NavDropdown.Item>
+				<NavDropdown.Item href="/japon">Japón</NavDropdown.Item>
+				<NavDropdown.Item href="/medio-oriente">Medio Oriente</NavDropdown.Item>
+				<NavDropdown.Item href="/mexico">México</NavDropdown.Item>
 				<NavDropdown.Item href="/uruguay">Uruguay</NavDropdown.Item>
-				<NavDropdown.Item href="#">Venezuela</NavDropdown.Item>
+				<NavDropdown.Item href="/venezuela">Venezuela</NavDropdown.Item>
 			</NavDropdown>
 
       <NavDropdown title="Buscar recetas" id="basic-nav-dropdown">

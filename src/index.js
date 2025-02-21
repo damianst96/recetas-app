@@ -109,6 +109,30 @@ const router = createBrowserRouter([
     path: "/dificil",
     element: <TypeDetail typeTitle="difíciles" type="Difícil" />
   },
+  {
+    path: "/india",
+    element: <CountryDetail country="India" />
+  },
+  {
+    path: "/italia",
+    element: <CountryDetail country="Italia" />
+  },
+  {
+    path: "/japon",
+    element: <CountryDetail country="Japón" />
+  },
+  {
+    path: "/medio-oriente",
+    element: <CountryDetail country="Medio Oriente" />
+  },
+  {
+    path: "/mexico",
+    element: <CountryDetail country="México" />
+  },
+  {
+    path: "/venezuela",
+    element: <CountryDetail country="Venezuela" />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
