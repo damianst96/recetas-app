@@ -6,19 +6,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from './Home';
 import AltoGuiso from './components/recipes/AltoGuiso';
-// import GuisoMoñito from './components/recipes/GuisoMoñito';
 import RecipeDetail from './components/RecipeDetail';
-// import Cheesecake from './components/recipes/Cheesecake';
 import AllRecipes from './components/AllRecipes';
-import SweetRecipes from './components/SweetRecipes';
-import SaltyRecipes from './components/SaltyRecipes';
 // import RecipeSearch from './components/RecipeSearch';
-import Guisos from './components/Guisos';
 import SearchResult from './components/SearchResult';
-import Menues from './components/Menues';
 import MenuDetail from './components/MenuDetail';
 import CountryDetail from './components/CountryDetail';
-	
+import TypeDetail from './components/TypeDetail';
+import StyleDetail from './components/StyleDetail';
 
   // Definir la función handleSearch que realiza la búsqueda en la API
   async function HandleSearch(){
@@ -44,21 +39,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/guiso-moñito",
-    element: <RecipeDetail
-      id={0} 
-    />
+    element: <RecipeDetail id={0} />
   },
   {
     path: "/cheesecake",
-    element: <RecipeDetail
-      id={2}
-    />
+    element: <RecipeDetail id={2} />
   },
   {
     path: "/budin-de-pan",
-    element: <RecipeDetail
-      id={3}
-    />
+    element: <RecipeDetail id={3} />
   },
   {
     path: "/todas-las-recetas",
@@ -66,11 +55,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dulces",
-    element: <SweetRecipes />
+    element: <TypeDetail typeTitle="dulces" type="Dulce" />
   },
   {
     path: "/saladas",
-    element: <SaltyRecipes />
+    element: <TypeDetail typeTitle="saladas" type="Salado" />
   },
   {
     path: "/search",
@@ -78,7 +67,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/guisos",
-    element: <Guisos />
+    element: <StyleDetail styleTitle="Guisos" />
   },
   {
     path: "/argentina",
@@ -94,13 +83,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/menues",
-    element: <Menues />
+    element: <TypeDetail typeTitle="de menúes" type="Menú" />
   },
   {
     path: "/chicken-kitchen",
-    element: <MenuDetail 
-      id={4}
-    />
+    element: <MenuDetail id={4} />
   },
   {
     path: "/china",
@@ -109,6 +96,18 @@ const router = createBrowserRouter([
   {
     path: "/españa",
     element: <CountryDetail country="España" />
+  },
+  {
+    path: "/facil",
+    element: <TypeDetail typeTitle="fáciles" type="Fácil" />
+  },
+  {
+    path: "/medio",
+    element: <TypeDetail typeTitle="intermedias" type="Media" />
+  },
+  {
+    path: "/dificil",
+    element: <TypeDetail typeTitle="difíciles" type="Difícil" />
   },
 ]);
 

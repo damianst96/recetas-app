@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Card from './RecipeCard';
 
-function SweetRecipes(){
+function TypeDetail(props){
     const [recipe, setRecipe] = useState(null);
 
     useEffect(() => {
@@ -19,12 +19,12 @@ function SweetRecipes(){
         <Header />
 
         <main className='container'>
-            <h1 className='main-title'>Guisos</h1>
+            <h1 className='main-title'>Recetas {props.typeTitle}</h1>
         </main>
         
         <div className="cards">
             {recipe ? recipe.map(function(i){
-				if(i.style === "Guisos"){
+				if(i.type === props.type){
 					return <Card
 						title={i.title}
 						picture={i.image}
@@ -42,4 +42,4 @@ function SweetRecipes(){
     )
 }
 
-export default SweetRecipes;
+export default TypeDetail;

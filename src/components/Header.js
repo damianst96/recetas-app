@@ -44,6 +44,7 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="#">Pollo</NavDropdown.Item>
 				<NavDropdown.Item href="#">Postres</NavDropdown.Item>
 				<NavDropdown.Item href="#">Sandwiches</NavDropdown.Item>
+        <NavDropdown.Item href="#">Sopas</NavDropdown.Item>
 				<NavDropdown.Item href="#">Tartas</NavDropdown.Item>
 				<NavDropdown.Item href="#">Tortas</NavDropdown.Item>
 				<NavDropdown.Item href="#">Veggie</NavDropdown.Item>
@@ -53,9 +54,9 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="/dulces">Dulces</NavDropdown.Item>
 				<NavDropdown.Item href="/saladas">Saladas</NavDropdown.Item>
 				<NavDropdown.Divider />
-				<NavDropdown.Item href="#">Fáciles</NavDropdown.Item>
-				<NavDropdown.Item href="#">Medias</NavDropdown.Item>
-				<NavDropdown.Item href="#">Difíciles</NavDropdown.Item>
+				<NavDropdown.Item href="/facil">Fáciles</NavDropdown.Item>
+				<NavDropdown.Item href="/medio">Medias</NavDropdown.Item>
+				<NavDropdown.Item href="/dificil">Difíciles</NavDropdown.Item>
 				<NavDropdown.Divider />
 				<NavDropdown.Item href="/menues">Menúes</NavDropdown.Item>
 			</NavDropdown>
