@@ -133,6 +133,54 @@ const router = createBrowserRouter([
     path: "/venezuela",
     element: <CountryDetail country="Venezuela" />
   },
+  {
+    path: "/arroz",
+    element: <StyleDetail styleTitle="Arroz" />
+  },
+  {
+    path: "/carne",
+    element: <StyleDetail styleTitle="Carne" />
+  },
+  {
+    path: "/cocktails",
+    element: <StyleDetail styleTitle="Cocktails" />
+  },
+  {
+    path: "/pan-pizza",
+    element: <StyleDetail styleTitle="Panes y Pizzas" />
+  },
+  {
+    path: "/pasta",
+    element: <StyleDetail styleTitle="Pasta" />
+  },
+  {
+    path: "/pollo",
+    element: <StyleDetail styleTitle="Pollo" />
+  },
+  {
+    path: "/postres",
+    element: <StyleDetail styleTitle="Postres" />
+  },
+  {
+    path: "/sandwiches",
+    element: <StyleDetail styleTitle="Sandwiches" />
+  },
+  {
+    path: "/sopas",
+    element: <StyleDetail styleTitle="Sopas" />
+  },
+  {
+    path: "/tartas",
+    element: <StyleDetail styleTitle="Tartas" />
+  },
+  {
+    path: "/tortas",
+    element: <StyleDetail styleTitle="Tortas" />
+  },
+  {
+    path: "/veggie",
+    element: <StyleDetail styleTitle="Veggie" />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

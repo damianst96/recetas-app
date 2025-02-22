@@ -295,7 +295,7 @@ app.get('/api', (req, res) => {
                 "Descripción 5",
             ],
             type: "Dulce",
-            style: "Tortas",
+            style: "Postres",
             difficulty: "Media",
             country: "Argentina"
         },
