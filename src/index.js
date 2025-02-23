@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -9,24 +9,12 @@ import AltoGuiso from './components/recipes/AltoGuiso';
 import RecipeDetail from './components/RecipeDetail';
 import AllRecipes from './components/AllRecipes';
 // import RecipeSearch from './components/RecipeSearch';
-import SearchResult from './components/SearchResult';
+// import SearchResult from './components/SearchResult';
 import MenuDetail from './components/MenuDetail';
 import CountryDetail from './components/CountryDetail';
 import TypeDetail from './components/TypeDetail';
 import StyleDetail from './components/StyleDetail';
-
-  // Definir la función handleSearch que realiza la búsqueda en la API
-  async function HandleSearch(){
-	  const [results, setResults] = useState([]);
-    try {
-      const response = await fetch(`/api?title=${results}`);
-      const data = await response.json();
-      setResults(data.recipes); // Guardar los resultados en el estado
-    } catch (error) {
-      console.error('Error al buscar recetas:', error);
-    }
-  };
-
+import SearchComponent from './components/SearchComponent';
 
 const router = createBrowserRouter([
   {
@@ -63,7 +51,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/search",
-    element: <SearchResult results={HandleSearch} />
+    element: <SearchComponent />
   },
   {
     path: "/guisos",
@@ -194,5 +182,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-export default HandleSearch;

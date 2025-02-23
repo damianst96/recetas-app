@@ -5,23 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles.css';
-import { useState } from 'react';
-import SearchForm from './SearchForm';
 // import SearchResult from './SearchResult';
 
-function Header({ onSearch }) {
-	const [results, setResults] = useState([]);
-
-  // Definir la función handleSearch que realiza la búsqueda en la API
-  const handleSearch = async () => {
-    try {
-      const response = await fetch(`/api?title=${results}`);
-      const data = await response.json();
-      setResults(data.recipes); // Guardar los resultados en el estado
-    } catch (error) {
-      console.error('Error al buscar recetas:', error);
-    }
-  };
+function Header() {
   
   return (
     <Navbar expand="lg" className="navbar">
@@ -75,40 +61,14 @@ function Header({ onSearch }) {
 				<NavDropdown.Item href="/venezuela">Venezuela</NavDropdown.Item>
 			</NavDropdown>
 
-      <NavDropdown title="Buscar recetas" id="basic-nav-dropdown">
-				<NavDropdown.Item href="#">A</NavDropdown.Item>
-        <NavDropdown.Item href="#">B</NavDropdown.Item>
-        <NavDropdown.Item href="#">C</NavDropdown.Item>
-        <NavDropdown.Item href="#">D</NavDropdown.Item>
-        <NavDropdown.Item href="#">E</NavDropdown.Item>
-        <NavDropdown.Item href="#">F</NavDropdown.Item>
-        <NavDropdown.Item href="#">G</NavDropdown.Item>
-        <NavDropdown.Item href="#">H</NavDropdown.Item>
-        <NavDropdown.Item href="#">I</NavDropdown.Item>
-        <NavDropdown.Item href="#">J</NavDropdown.Item>
-        <NavDropdown.Item href="#">K</NavDropdown.Item>
-        <NavDropdown.Item href="#">L</NavDropdown.Item>
-        <NavDropdown.Item href="#">M</NavDropdown.Item>
-        <NavDropdown.Item href="#">N</NavDropdown.Item>
-        <NavDropdown.Item href="#">Ñ</NavDropdown.Item>
-        <NavDropdown.Item href="#">O</NavDropdown.Item>
-        <NavDropdown.Item href="#">P</NavDropdown.Item>
-        <NavDropdown.Item href="#">Q</NavDropdown.Item>
-        <NavDropdown.Item href="#">R</NavDropdown.Item>
-        <NavDropdown.Item href="#">S</NavDropdown.Item>
-        <NavDropdown.Item href="#">T</NavDropdown.Item>
-        <NavDropdown.Item href="#">U</NavDropdown.Item>
-        <NavDropdown.Item href="#">V</NavDropdown.Item>
-        <NavDropdown.Item href="#">W</NavDropdown.Item>
-        <NavDropdown.Item href="#">X</NavDropdown.Item>
-        <NavDropdown.Item href="#">Y</NavDropdown.Item>
-        <NavDropdown.Item href="#">Z</NavDropdown.Item>
-			</NavDropdown>
+      <Nav.Link href="/search">Buscar Recetas</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
 	  
-      <SearchForm className="d-flex" onSubmit={handleSearch} />
+      {/* <SearchForm className="d-flex" onSubmit={handleSearch} /> */}
+
       {/* <Form className="d-flex" onSubmit={handleSearch}>
       <input
         type="search"
