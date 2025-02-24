@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Card from './RecipeCard';
 
-function AllRecipes(){
+function CountryDetail(props){
     const [recipe, setRecipe] = useState(null);
 
     useEffect(() => {
@@ -19,23 +19,28 @@ function AllRecipes(){
         <Header />
 
         <main className='container'>
-            <h1 className='main-title'>Todas las recetas</h1>
+            <h1 className='main-title'>Recetas de {props.country}</h1>
         </main>
         
         <div className="cards">
             {recipe ? recipe.map(function(i){
-                return <Card
-                    title={i.title}
-                    picture={i.image}
-                    route={i.link}
-                />
-            }) : "Loading..."}
+				if(i.country === props.country){
+					return <Card
+						title={i.title}
+						picture={i.image}
+						route={i.link}
+					/>
+				} else {
+					return null;
+				}
+            }) : "No se encontraron recetas"}
         </div>
         
 
         <Footer />
+
         </>
     )
 }
 
-export default AllRecipes;
+export default CountryDetail;

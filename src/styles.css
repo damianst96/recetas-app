@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+.search-bar {
+    display: flex;
+    margin: 1% auto 0;
+}
+
 .navbar {
     background-color: #BF9C42;
 }
@@ -25,6 +30,10 @@
 }
 
 .title {
+    margin: 2% 0;
+}
+
+.main-title {
     margin: 2% 0;
 }
 
@@ -107,4 +116,8 @@
 	.banner-main {
 		text-align: center;
 	}
+
+    .main-title {
+        margin-bottom: 0;
+    }
 }
