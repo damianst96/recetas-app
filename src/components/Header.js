@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles.css';
 // import SearchResult from './SearchResult';
+// import SearchForm from './SearchForm';
 
 function Header() {
   
@@ -67,7 +68,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
 	  
-      {/* <SearchForm className="d-flex" onSubmit={handleSearch} /> */}
+      {/* <SearchForm className="d-flex" /> */}
 
       {/* <Form className="d-flex" onSubmit={handleSearch}>
       <input
