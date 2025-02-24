@@ -305,7 +305,7 @@ app.get('/api', (req, res) => {
             id: 5,
             link: "/chicken-kitchen",
             title: "Menú Chicken Kitchen",
-            image: "img/chickenKitchen-Logo.png",
+            image: "img/chicken kitchen logo.png",
             altImage: "img/chicken kitchen menu 4.jpg",
             ingredients: [
                 
