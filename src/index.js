@@ -15,11 +15,17 @@ import CountryDetail from './components/CountryDetail';
 import TypeDetail from './components/TypeDetail';
 import StyleDetail from './components/StyleDetail';
 import SearchComponent from './components/SearchComponent';
+import DifficultyDetail from './components/DifficultyDetail';
+import Error404 from './components/404Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "*",
+    element: <Error404 />,
   },
   {
     path: "/alto-guiso",
@@ -43,11 +49,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dulces",
-    element: <TypeDetail typeTitle="dulces" type="Dulce" />
+    element: <TypeDetail typeTitle="Recetas dulces" type="Dulce" />
   },
   {
     path: "/saladas",
-    element: <TypeDetail typeTitle="saladas" type="Salado" />
+    element: <TypeDetail typeTitle="Recetas saladas" type="Salado" />
   },
   {
     path: "/search",
@@ -71,7 +77,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/menues",
-    element: <TypeDetail typeTitle="de menúes" type="Menú" />
+    element: <TypeDetail typeTitle="Menúes" type="Menú" />
   },
   {
     path: "/chicken-kitchen",
@@ -87,15 +93,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/facil",
-    element: <TypeDetail typeTitle="fáciles" type="Fácil" />
+    element: <DifficultyDetail difTitle="Recetas fáciles" difficulty="Fácil" />
   },
   {
     path: "/medio",
-    element: <TypeDetail typeTitle="intermedias" type="Media" />
+    element: <DifficultyDetail difTitle="Recetas intermedias" difficulty="Media" />
   },
   {
     path: "/dificil",
-    element: <TypeDetail typeTitle="difíciles" type="Difícil" />
+    element: <DifficultyDetail difTitle="Recetas difíciles" difficulty="Difícil" />
   },
   {
     path: "/india",
@@ -168,6 +174,18 @@ const router = createBrowserRouter([
   {
     path: "/veggie",
     element: <StyleDetail styleTitle="Veggie" />
+  },
+  {
+    path: "/chivito",
+    element: <RecipeDetail id={5} />
+  },
+  {
+    path: "/asado",
+    element: <RecipeDetail id={6} />
+  },
+  {
+    path: "/pizza",
+    element: <RecipeDetail id={7} />
   },
 ]);
 
