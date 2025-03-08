@@ -102,7 +102,7 @@ app.get('/api', (req, res) => {
             description: ["Voy a empezar contando una historia que cambió mi vida: el 7 de agosto del 2011 fue la fecha 1 del Torneo Apertura del fútbol argentino y Lanús le ganó 1-0 a San Lorenzo de visitante en el Nuevo Gasómetro. Lo más	importante no fue la victoria sino una frase de un hincha del 'granate' que quedó para el recuerdo:",
                 "15 pesos sale un paty acá, con 15 pesos...con 15 pesos me hago alto guiso.",
                 "Para la mayoría de la gente es insólito que una frase tan simple como esa signifique tanto. Resulta que en la época 15 pesos argentinos para un paty de cancha era mucho dinero y para un alto guiso no estabas muy lejos en dinero. Fue tanto lo que generó que se hicieron memes, temas musicales y hasta se creó el 'Indice Alto Guiso'	para medir la inflación en relación al precio del guiso.",
-                "Incluso encontraron al señor Alto Guiso muchos años después de la histórica frase. Una historia bien argentina	sobre la inflación.",
+                "El señor Alto Guiso se llama Ezequiel Espinoza, incluso apareció muchos años después de la histórica frase y ,contrario a lo que se cree por su fama repentina, siempre se mostró como una persona muy humilde. Una historia bien argentina sobre la inflación.",
                 "Ahora vamos a la receta. Realmente no hay mucho para explicar, el primer paso es cortar la carne en cubitos y sellarla en una cacerola grande, mientras tanto cortar las verduras. Cuando la carne esté sellada reservar.",
                 "Sin lavar la olla agregar las verduras y saltearlas con sal, luego volver a agregar la carne junto con el puré de tomate y un poco de agua o caldo hasta cubrir. Dejar cocinar por aproximadamente 40 minutos hasta que el líquido se reduzca. Servir muy caliente apenas apagado el fuego.",
                 "Esta es una de las recetas más personalizables que existen. Se pueden agregar o reemplazar ingredientes como gusten: se puede agregar vino, legumbres, chorizo colorado, pollo...el cielo es el límite."
@@ -131,7 +131,7 @@ app.get('/api', (req, res) => {
                 "Ingrediente 7",
                 "Ingrediente 8",
             ],
-            descriptionShort: "Cheesecake",
+            descriptionShort: "Si se prepara correctamente, esta es la mejor torta del mundo. No tengo dudas",
             description: [
                 "Descripción 1",
                 "Descripción 2",
@@ -159,7 +159,7 @@ app.get('/api', (req, res) => {
                 "Azúcar: 200 grs para el budín y 200 para el caramelo",
                 "Esencia de vainilla: c/n",
             ],
-            descriptionShort: "Budín de Pan",
+            descriptionShort: "La mejor manera de aprovechar el pan viejo con pocos ingredientes",
             description: [
                 "Este se va a transformar en uno de tus postres favoritos. Con pan viejo y muy pocos ingredientes podés hacer un postre de calidad de restaurante por muy poco dinero. Llevalo a un asado familiar y te van a amar.",
                 "Empezamos cortando el pan en pedacitos con la mano y lo bañamos en 1 litro de leche, lo dejamos reposar en la heladera mientras preparamos el resto.",
@@ -186,12 +186,109 @@ app.get('/api', (req, res) => {
             descriptionShort: "Chicken Kitchen busca ofrecer opciones rápidas de pollo pero saludables",
             description: [
                 "Chicken Kitchen es una cadena de comida rápida de Florida especializada en pollo, pero busca ofrecer opciones saludables que te van a gustar mucho.",
-                "El 'Chop-Chop' es un nombre interesante para uno de sus platos estrella, combinando pollo grillado con arroz en un bowl y distintas variantes."
+                "El 'Chop-Chop' es un nombre interesante para uno de sus platos estrella, combinando pollo grillado con arroz en un bowl y distintas variantes.",
+                "También tienen los 'wrapitos' que son algo parecido pero en una tortilla. Para los más simples tienen pechugas de pollo con acompañamientos o ensaladas.",
+                "Les dejo el menú para que se inspiren en cocinar algo rico."
             ],
             type: "Menú",
             style: "",
             difficulty: "",
             country: "Estados Unidos"
+        },
+
+        // CHIVITO URUGUAYO
+        {
+            id: 6,
+            link: "/chivito",
+            title: "Chivito Uruguayo",
+            image: "img/chivito al pan.jpg",
+            altImage: "img/chivito al plato.jpg",
+            ingredients: [
+                "Pan para sandwich",
+                "Carne cortada fina (nalga, lomo o cuadrada)",
+                "Tiras de bacon",
+                "Jamón cocido y queso de máquina",
+                "Hojas de lechuga",
+                "Tomate en rodajas",
+                "Huevo frito",
+                "Ensalada rusa",
+                "Papas fritas"
+            ],
+            descriptionShort: "El Chivito Uruguayo es un sandwich increíble que es una de las comidas más típicas del país vecino",
+            description: [
+                "Esta preparación es impresionante, los uruguayos le pusieron absolutamente todo junto a un sandwich: lechuga, tomate, jamón, queso, huevo frito, bacon, ensalada rusa...una maravilla. También se puede hacer al plato que es mi forma de chivito favorita.",
+                "La clave de este sandwich es tener todos los ingredientes preparados para poder armarlo en poco tiempo, está en dificultad media porque son muchos ingredientes para preparar.",
+                "Lo primero que tenemos que hacer es preparar la ensalada rusa que va a ser uno de los acompañamientos, también las papas fritas y el huevo frito. Luego simplemente cortamos la lechuga, el tomate y preparamos el jamón y el queso.",
+                "Por último cocinamos la carne con el bacon 'vuelta y vuelta' más el queso para que se derrita, clave tostar el pan para más sabor. Ensamblamos el sandwich con la carne abajo y por encima todo lo demás: queso, jamón, tomate, lechuga y huevo frito. Acompañamos con las papas fritas y la ensalada rusa al costado.",
+                "También se puede hacer sin pan con un proceso muy parecido. Algunos uruguayos le ponen pickles...por favor no hagan eso.",
+                "A disfrutar esta maravilla. ¡Vamo' arriba! ¡Uruguay nomá!"
+            ],
+            type: "Salado",
+            style: "Sandwiches",
+            difficulty: "Media",
+            country: "Uruguay"
+        },
+
+        // ASADO
+        {
+            id: 7,
+            link: "/asado",
+            title: "Asado",
+            image: "img/asado.jpg",
+            altImage: "img/asado2.jpg",
+            ingredients: [
+                "Bolsa de carbón",
+                "Chorizo: 2 unidades",
+                "Morcilla: 2 unidades",
+                "Asado de tira: 500 grs",
+                "Vacío: 500 grs",
+                "Pan: c/n",
+                "Chimichurri y salsa criolla"
+            ],
+            descriptionShort: "El asado es un placer de los dioses, la mejor comida de Argentina y Uruguay",
+            description: [
+                "El asado no es simplemente cocinar carne a la parrilla, es un motivo para reunir a la familia y a los amigos acompañado de picada, mates, charlas, truco y más.",
+                "No hay una forma específica de hacer el asado ya que hay muchas parrillas, cortes de carne y más variantes. Acá voy a mostrar un asado clásico para dos personas pero se pueden agregar más cortes que voy a hablar más adelante.",
+                "Para prender el fuego hay que colocar una buena cantidad de papel de diario junto a una buena cantidad de madera y carbón. El papel es lo que prende rápido y la madera es lo que debe agarrar el fuego para que la brasa se pueda hacer. Es importante mantener la brasa bien encendida y que no se apague para poder cocinar la carne.",
+                "Si no tenemos pollo (que es de lo que más tarda en hacerse) primero vamos a colocar el vacío o cualquiera de los cortes más gruesos junto con el chorizo, luego el asado de tira que no tarda mucho. Al final se cocina la morcilla que es simplemente calentarla en la parrilla.",
+                "En el medio uno la pasa bien con familia o amigos. Como guarnición se pueden hacer papas fritas o ensalada que son los acompañamientos más típicos, se sirve idealmente junto con chimichurri y salsa criolla.",
+                "Otros cortes para el asado pueden ser: pollo, tapa de asado, chinchulín, riñón, molleja o provoleta. Hay un mundo inmenso en esta maravilla."
+            ],
+            type: "Salado",
+            style: "Carne",
+            difficulty: "Difícil",
+            country: "Argentina"
+        },
+
+        // PIZZA CASERA
+        {
+            id: 8,
+            link: "/pizza",
+            title: "Pizza casera",
+            image: "img/pizza.jpg",
+            altImage: "img/pizza2.jpg",
+            ingredients: [
+                "Harina 00: 500 grs",
+                "Agua: 330 ml",
+                "Azúcar: 1 cucharada",
+                "Levadura: 5 grs",
+                "Sal: 5 grs",
+                "Salsa de tomate: a gusto",
+                "Queso mozzarella: a gusto"
+            ],
+            descriptionShort: "La pizza es una comida increíble muy importante en Argentina y es muy sencilla de hacer en casa",
+            description: [
+                "Descripción 1",
+                "Descripción 2",
+                "Descripción 3",
+                "Descripción 4",
+                "Descripción 5",
+                "Descripción 6"
+            ],
+            type: "Salado",
+            style: "Panes y Pizzas",
+            difficulty: "Media",
+            country: "Italia"
         },
     ];
   
