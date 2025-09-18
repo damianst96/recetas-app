@@ -308,7 +308,10 @@ app.get('/api', (req, res) => {
   
     return res.json({ recipes: filteredRecipes });
 });
-  
+
+export default function handler(req, res) {
+  res.status(200).json({ msg: "Hola desde la API en Vercel 🚀" });
+}
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
