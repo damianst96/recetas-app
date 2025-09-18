@@ -15,6 +15,14 @@ app.set("view engine", "ejs");
 const publicPath = path.join(__dirname, '/public');
 app.use(express.static(publicPath));
 
+// Middleware para servir React (carpeta build)
+const buildPath = path.join(__dirname, "../../build");
+app.use(express.static(buildPath));
+
+app.get("*", (req, res) => {
+  res.sendFile(buildPath, "index.html");
+});
+
 // app.get('/api/data', (req, res) => {
 //     res.json({ message: 'Hello from Express!' });
 // });
