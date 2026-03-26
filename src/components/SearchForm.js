@@ -9,7 +9,7 @@ function SearchForm() {
       const [search, setSearch] = useState("");
   
       const showData = async function(id){
-          const response = await fetch("/api");
+          const response = await fetch("https://recetas-app-server.onrender.com/api");
           const data = await response.json();
           setRecipes(data.recipes);
       }
