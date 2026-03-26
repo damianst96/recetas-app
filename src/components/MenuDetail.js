@@ -8,7 +8,7 @@ function MenuDetail(props){
     const [recipe, setRecipe] = useState([]);
 
     useEffect(() => {
-        fetch("/api")
+        fetch("https://recetas-app-server.onrender.com/api")
             .then((response) => response.json())
             .then(data => {
                 const menuFiltrado = data.recipes.find(r => r === data.recipes[props.id]);  // Filtras por el ID que te interesa

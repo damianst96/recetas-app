@@ -8,7 +8,7 @@ function Home() {
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
-    fetch("/api")
+    fetch("https://recetas-app-server.onrender.com/api")
       .then((response) => response.json())
       .then((data) => setRecipe(data.recipes))
       .catch((error) => console.error('Error fetching data:', error));
