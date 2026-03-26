@@ -59,7 +59,7 @@ app.get('/api/alto-guiso', (req, res) => {
     });
 });
 
-app.get('/api', (req, res) => {
+app.get('https://recetas-app-server.onrender.com/api', (req, res) => {
     const { title } = req.query;
     const allRecipes = [ 
         // GUISO DE FIDEOS MOÑITO
