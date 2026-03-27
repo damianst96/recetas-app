@@ -11,7 +11,7 @@ function RecipeDetail(props){
         fetch("https://recetas-app-server.onrender.com/api")
             .then((response) => response.json())
             .then(data => {
-                const recetaFiltrada = data.recipes.find(r => r === data.recipes[props.id]);  // Filtras por el ID que te interesa
+                const recetaFiltrada = data.recipes.find(r => r.id === Number(props.id));  // Filtras por el ID que te interesa
                 setRecipe(recetaFiltrada);
             })
             .catch((error) => console.error('Error fetching data:', error));
