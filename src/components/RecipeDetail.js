@@ -3,19 +3,29 @@ import Header from './Header';
 import Footer from './Footer';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { useParams } from 'react-router-dom';
 
 function RecipeDetail(props){
+    const { id } = useParams();
     const [recipe, setRecipe] = useState([]);
 
+    // useEffect(() => {
+    //     fetch(`https://recetas-app-server.onrender.com/api/recipe/${id}`)
+    //         .then((response) => response.json())
+    //         .then(data => {
+    //             const recetaFiltrada = data.recipes.find(r => r.id === Number(props.id));  // Filtras por el ID que te interesa
+    //             setRecipe(recetaFiltrada);
+    //         })
+    //         .catch((error) => console.error('Error fetching data:', error));
+    // }, [props.id]);
+
     useEffect(() => {
-        fetch("https://recetas-app-server.onrender.com/api")
+        // Llamamos a la nueva ruta de la API que creamos en el paso 1
+        fetch(`https://recetas-app-server.onrender.com/api/recipe/${id}`)
             .then((response) => response.json())
-            .then(data => {
-                const recetaFiltrada = data.recipes.find(r => r.id === Number(props.id));  // Filtras por el ID que te interesa
-                setRecipe(recetaFiltrada);
-            })
-            .catch((error) => console.error('Error fetching data:', error));
-    }, [props.id]);
+            .then(data => setRecipe(data))
+            .catch((error) => console.error('Error:', error));
+    }, [id]);
 
     return(
         <>

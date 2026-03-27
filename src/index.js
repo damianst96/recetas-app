@@ -24,24 +24,16 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: "/recipe/:id",
+    element: <RecipeDetail />
+  },
+  {
     path: "*",
     element: <Error404 />,
   },
   {
     path: "/alto-guiso",
     element: <AltoGuiso />
-  },
-  {
-    path: "/guiso-moñito",
-    element: <RecipeDetail id={0} />
-  },
-  {
-    path: "/cheesecake",
-    element: <RecipeDetail id={2} />
-  },
-  {
-    path: "/budin-de-pan",
-    element: <RecipeDetail id={3} />
   },
   {
     path: "/todas-las-recetas",
@@ -78,10 +70,6 @@ const router = createBrowserRouter([
   {
     path: "/menues",
     element: <TypeDetail typeTitle="Menúes" type="Menú" />
-  },
-  {
-    path: "/chicken-kitchen",
-    element: <MenuDetail id={4} />
   },
   {
     path: "/china",
@@ -175,18 +163,34 @@ const router = createBrowserRouter([
     path: "/veggie",
     element: <StyleDetail styleTitle="Veggie" />
   },
-  {
-    path: "/chivito",
-    element: <RecipeDetail id={5} />
-  },
-  {
-    path: "/asado",
-    element: <RecipeDetail id={6} />
-  },
-  {
-    path: "/pizza",
-    element: <RecipeDetail id={7} />
-  },
+  // {
+  //   path: "/guiso-moñito",
+  //   element: <RecipeDetail id={0} />
+  // },
+  // {
+  //   path: "/cheesecake",
+  //   element: <RecipeDetail id={2} />
+  // },
+  // {
+  //   path: "/budin-de-pan",
+  //   element: <RecipeDetail id={3} />
+  // },
+  // {
+  //   path: "/chicken-kitchen",
+  //   element: <MenuDetail id={4} />
+  // },
+  // {
+  //   path: "/chivito",
+  //   element: <RecipeDetail id={5} />
+  // },
+  // {
+  //   path: "/asado",
+  //   element: <RecipeDetail id={6} />
+  // },
+  // {
+  //   path: "/pizza",
+  //   element: <RecipeDetail id={7} />
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
