@@ -5,7 +5,7 @@ import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { useParams } from 'react-router-dom';
 
-function RecipeDetail(props){
+function RecipeDetail(){
     const { id } = useParams();
     const [recipe, setRecipe] = useState([]);
 
@@ -20,7 +20,6 @@ function RecipeDetail(props){
     // }, [props.id]);
 
     useEffect(() => {
-        // Llamamos a la nueva ruta de la API que creamos en el paso 1
         fetch(`https://recetas-app-server.onrender.com/api/recipe/${id}`)
             .then((response) => response.json())
             .then(data => setRecipe(data))

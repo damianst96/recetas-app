@@ -29,7 +29,7 @@ function Home() {
             title={i.title}
             description={i.descriptionShort}
             picture={i.image}
-            route={i.link}
+            route={`/recipe/${i.id}`}
           />
         }) : "Loading..."}
     </div>
