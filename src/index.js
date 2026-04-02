@@ -10,7 +10,7 @@ import RecipeDetail from './components/RecipeDetail';
 import AllRecipes from './components/AllRecipes';
 // import RecipeSearch from './components/RecipeSearch';
 // import SearchResult from './components/SearchResult';
-import MenuDetail from './components/MenuDetail';
+// import MenuDetail from './components/MenuDetail';
 import CountryDetail from './components/CountryDetail';
 import TypeDetail from './components/TypeDetail';
 import StyleDetail from './components/StyleDetail';
