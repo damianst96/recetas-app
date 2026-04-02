@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 
 function RecipeDetail(){
     const { id } = useParams();
-    const [recipe, setRecipe] = useState([]);
+    const [recipe, setRecipe] = useState(null);
 
     // useEffect(() => {
     //     fetch(`https://recetas-app-server.onrender.com/api/recipe/${id}`)
@@ -25,6 +25,8 @@ function RecipeDetail(){
             .then(data => setRecipe(data))
             .catch((error) => console.error('Error:', error));
     }, [id]);
+
+    if (!recipe) return <p>Cargando receta...</p>
 
     return(
         <>
@@ -52,7 +54,7 @@ function RecipeDetail(){
                     }) : "Loading..."}
 
                     <div className="banner">
-                        <p><Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom></p>
+                        <div><Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom></div>
                     </div>
                 </div>
 
