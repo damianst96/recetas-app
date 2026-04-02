@@ -54,7 +54,7 @@ function RecipeDetail(){
                     }) : "Loading..."}
 
                     <div className="banner">
-                        <div><Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom></div>
+                        <Zoom><img src={recipe ? recipe.altImage : "Loading..."} width="100%" height="20%" alt="loading..." /></Zoom>
                     </div>
                 </div>
 
