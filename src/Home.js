@@ -26,10 +26,11 @@ function Home() {
     <div className="cards">
         {recipe ? recipe.map(function(i){
           return <Card
+            key={i.id}
             title={i.title}
             description={i.descriptionShort}
             picture={i.image}
-            route={i.link}
+            route={`/recipe/${i.id}`}
           />
         }) : "Loading..."}
     </div>
