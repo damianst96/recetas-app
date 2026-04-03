@@ -21,7 +21,10 @@ function RecipeDetail(){
 
     useEffect(() => {
         fetch(`https://recetas-app-server.onrender.com/api/recipe/${id}`)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response) throw new Error("Fallo en la respuesta");
+                return response.json();
+            })
             .then(data => setRecipe(data))
             .catch((error) => console.error('Error:', error));
     }, [id]);
