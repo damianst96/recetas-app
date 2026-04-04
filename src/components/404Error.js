@@ -15,9 +15,9 @@ function Error404(){
                     <h5 className='title'>Pero no te preocupes, te dejamos fotos de comida</h5>
                 </div>
 
-                <Zoom><img src='img/asado2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
-                <Zoom><img src='img/pizza2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
-                <Zoom><img src='img/budin-de-pan.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
+                <Zoom><img src='https://recetas-app-server.onrender.com/img/asado2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
+                <Zoom><img src='https://recetas-app-server.onrender.com/img/pizza2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
+                <Zoom><img src='https://recetas-app-server.onrender.com/img/budin-de-pan.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
             </main>
 
             <Footer />
