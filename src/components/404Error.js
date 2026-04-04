@@ -17,7 +17,7 @@ function Error404(){
 
                 <Zoom><img src='img/asado2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
                 <Zoom><img src='img/pizza2.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
-                <Zoom><img src='img/budin de pan.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
+                <Zoom><img src='img/budin-de-pan.jpg' className="banner-image" width="100%" alt="loading..." /></Zoom><br></br>
             </main>
 
             <Footer />

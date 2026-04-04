@@ -28,7 +28,7 @@ function StyleDetail(props){
 					return <Card
 						title={i.title}
 						picture={i.image}
-						route={i.link}
+						route={`/recipe/${i.id}`}
 					/>
 				} else {
 					return null;
