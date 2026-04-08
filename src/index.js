@@ -10,7 +10,7 @@ import RecipeDetail from './components/RecipeDetail';
 import AllRecipes from './components/AllRecipes';
 // import RecipeSearch from './components/RecipeSearch';
 // import SearchResult from './components/SearchResult';
-// import MenuDetail from './components/MenuDetail';
+import MenuDetail from './components/MenuDetail';
 import CountryDetail from './components/CountryDetail';
 import TypeDetail from './components/TypeDetail';
 import StyleDetail from './components/StyleDetail';
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/recipe/:id",
     element: <RecipeDetail />
+  },
+  {
+    path: "/menu/:id",
+    element: <MenuDetail />
   },
   {
     path: "*",
@@ -100,6 +104,10 @@ const router = createBrowserRouter([
     element: <CountryDetail country="Italia" />
   },
   {
+    path: "/israel",
+    element: <CountryDetail country="Israel" />
+  },
+  {
     path: "/japon",
     element: <CountryDetail country="Japón" />
   },
@@ -163,34 +171,6 @@ const router = createBrowserRouter([
     path: "/veggie",
     element: <StyleDetail styleTitle="Veggie" />
   },
-  // {
-  //   path: "/guiso-moñito",
-  //   element: <RecipeDetail id={0} />
-  // },
-  // {
-  //   path: "/cheesecake",
-  //   element: <RecipeDetail id={2} />
-  // },
-  // {
-  //   path: "/budin-de-pan",
-  //   element: <RecipeDetail id={3} />
-  // },
-  // {
-  //   path: "/chicken-kitchen",
-  //   element: <MenuDetail id={4} />
-  // },
-  // {
-  //   path: "/chivito",
-  //   element: <RecipeDetail id={5} />
-  // },
-  // {
-  //   path: "/asado",
-  //   element: <RecipeDetail id={6} />
-  // },
-  // {
-  //   path: "/pizza",
-  //   element: <RecipeDetail id={7} />
-  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -44,8 +44,6 @@ function Header() {
 				<NavDropdown.Item href="/facil">Fáciles</NavDropdown.Item>
 				<NavDropdown.Item href="/medio">Medias</NavDropdown.Item>
 				<NavDropdown.Item href="/dificil">Difíciles</NavDropdown.Item>
-				<NavDropdown.Divider />
-				<NavDropdown.Item href="/menues">Menúes</NavDropdown.Item>
 			</NavDropdown>
 			
 			<NavDropdown title="Recetas por país" id="basic-nav-dropdown">
@@ -54,6 +52,7 @@ function Header() {
 				<NavDropdown.Item href="/españa">España</NavDropdown.Item>
 				<NavDropdown.Item href="/eeuu">Estados Unidos</NavDropdown.Item>
 				<NavDropdown.Item href="/india">India</NavDropdown.Item>
+				<NavDropdown.Item href="/israel">Israel</NavDropdown.Item>
 				<NavDropdown.Item href="/italia">Italia</NavDropdown.Item>
 				<NavDropdown.Item href="/japon">Japón</NavDropdown.Item>
 				<NavDropdown.Item href="/medio-oriente">Medio Oriente</NavDropdown.Item>
